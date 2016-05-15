@@ -1,0 +1,8 @@
+[
+  {
+    "key_down": "special", "time_since_key_down": 6,
+    "buffer_animation_id": "neutral_special",
+    "buffer_animation_frame": 0,
+    "status": "break"
+  }
+]

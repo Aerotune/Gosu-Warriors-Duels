@@ -1,0 +1,157 @@
+{
+  "hit_id": "block",
+  "default_hit_effect": "block",
+  "clash_frame_events": [
+    {
+      "new_hit": "block",
+      "set_animation_id": "block_back_clash",
+      "set_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "before_frame_events": [
+    {
+      "frame_event": "can_ground_jump"
+    },
+    {
+      "key_up": "block",
+      "buffer_animation_id": "block_high_to_stand",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "latest_key_down": "up", "keys": ["up", "down", "forward", "backward"],
+      "buffer_animation_id": "block_high_to_up",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "latest_key_down": "down", "keys": ["up", "down", "forward", "backward"],
+      "buffer_animation_id": "block_low",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "latest_key_down": "forward", "keys": ["up", "down", "forward", "backward"],
+      "buffer_animation_id": "post_block_back",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "key_up": "backward",
+      "buffer_animation_id": "post_block_back",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

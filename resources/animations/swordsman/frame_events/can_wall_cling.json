@@ -1,0 +1,28 @@
+[
+  {
+    "on_wall": true,
+    "on_ground": false,
+    "facing": "wall",
+    "key_down": "forward",
+    "can_consume": "wall_cling",
+    "consume": "wall_cling",
+    "cooldown": 30,
+    "set_animation_id": "wall_cling",
+    "set_animation_frame": 0,
+    "factor_x": "wall",
+    "status": "break"
+  },
+  {
+    "on_wall": true,
+    "on_ground": false,
+    "not_facing": "wall",
+    "key_down": "backward",
+    "can_consume": "wall_cling",
+    "consume": "wall_cling",
+    "cooldown": 30,
+    "set_animation_id": "wall_cling",
+    "set_animation_frame": 0,
+    "factor_x": "wall",
+    "status": "break"
+  }
+]

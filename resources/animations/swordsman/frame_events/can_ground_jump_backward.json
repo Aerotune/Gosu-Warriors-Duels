@@ -1,0 +1,11 @@
+[
+  {
+    "key_down": "jump",
+    "time_since_key_down": 6,
+    "latest_key_down": "backward", "keys": ["forward", "backward"],
+    "factor_x": "invert",
+    "set_animation_id": "pre_jump",
+    "set_animation_frame": 0,
+    "status": "break"
+  }
+]

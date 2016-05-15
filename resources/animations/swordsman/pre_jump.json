@@ -1,0 +1,90 @@
+{
+  "before_frame_events": [
+    { "frame_event": "can_low_slide", "before_frame": 3 },
+    {
+      "frame": "last",
+      "key_down": "jump",
+      "velocity_y_q8": -1300
+    },
+    {
+      "frame": "last",
+      "key_up": "jump",
+      "velocity_y_q8": -820
+    },
+    {
+      "frame": "last",
+      "key_up": "jump",
+      "key_down": "forward",
+      "acceleration_x_q8": 150,
+      "max_speed_x_q8": 700
+    },
+    {
+      "frame": "last",
+      "key_down": "jump",
+      "key_down": "forward",
+      "acceleration_x_q8": 150,
+      "max_speed_x_q8": 400
+    },
+    {
+      "frame": "last",
+      "key_down": "backward",
+      "acceleration_x_q8": -150,
+      "max_speed_x_q8": 800
+    },
+    {
+      "frame": "last",
+      "sfx": "jump/1",
+      "set_animation_id": "jump_up_forward",
+      "set_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "key_down": "block", "time_since_key_down": 6,
+      "set_animation_id": "air_counter",
+      "set_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "before_frame": 3,
+      "frame_event": "can_ground_attack"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "pre_jump",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "pre_jump",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "pre_jump",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "pre_jump",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "pre_jump",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "pre_jump",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

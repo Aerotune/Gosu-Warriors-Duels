@@ -1,0 +1,57 @@
+{
+  "before_frame_events": [
+    {
+      "ignore_unit_collision": true
+    },
+    {
+      "velocity_x_q8": 0
+    },
+    {
+      "key_down": "jump",
+      "time_since_key_down": 6,
+      "buffer_animation_id": "up_special_pre_jump",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "any_key_down": ["down", "forward", "backward", "attack"],
+      "buffer_animation_id": "up_special_to_idle",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "key_down": "special",
+      "time_since_key_down": 6,
+      "new_hit": "up_special2",
+      "buffer_animation_id": "up_special2",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "up_special_stand",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "up_special_stand",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "up_special_stand",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "up_special_stand",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "on_ground": true,
+    "key_down": "attack",
+    "latest_key_down": "up", "keys": ["forward", "backward", "up", "down"],
+    "time_since_key_down": 6,
+    "new_hit": "up_tilt",
+    "buffer_animation_id": "up_tilt",
+    "buffer_animation_frame": 0,
+    "status": "break"
+  }
+]

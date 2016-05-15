@@ -1,0 +1,12 @@
+[
+  {
+    "latest_key_down": "down",
+    "keys": ["up", "down"],
+    "key_down": "attack",
+    "time_since_key_down": 6,
+    "new_hit": "down_tilt",
+    "set_animation_id": "down_tilt",
+    "set_animation_frame": 0,
+    "status": "break"
+  }
+]

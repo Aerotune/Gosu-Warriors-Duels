@@ -1,0 +1,10 @@
+[
+  {
+    "key_down": "attack",
+    "can_consume": "shoot",
+    "consume": "shoot",
+    "cooldown": 9,
+    "new_hit": "shuriken",
+    "spawn_projectile": "shuriken"
+  }
+]

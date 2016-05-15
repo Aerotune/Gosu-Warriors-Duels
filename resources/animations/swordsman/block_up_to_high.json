@@ -1,0 +1,79 @@
+{
+  "hit_id": "block",
+  "default_hit_effect": "block",
+  "clash_frame_events": [
+    {
+      "new_hit": "block",
+      "status": "break"
+    }
+  ],
+  "before_frame_events": [
+    {
+      "frame_event": "can_ground_jump"
+    },
+    {
+      "key_up": "block",
+      "buffer_animation_id": "block_high_to_stand",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "frame": 3,
+      "latest_key_down": "down", "keys": ["up", "down", "forward", "backward"],
+      "set_animation_id": "block_low",
+      "set_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "frame": 3,
+      "latest_key_down": "backward", "keys": ["up", "down", "forward", "backward"],
+      "set_animation_id": "pre_block_back",
+      "set_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "frame": "last",
+      "buffer_animation_id": "block_high",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "block_high_to_up",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_high_to_up",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_high_to_up",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_high",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_high",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_high",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

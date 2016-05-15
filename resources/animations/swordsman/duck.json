@@ -1,0 +1,54 @@
+{
+  "before_frame_events": [
+    {
+      "ignore_unit_collision": true
+    },
+    { "frame_event": "can_down_tilt" },
+    {
+      "frame_event": "can_low_slide"
+    },
+    {
+      "key_up": "down",
+      "set_animation_id": "duck_to_stand",
+      "set_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "key_down": "block",
+      "buffer_animation_id": "block_low",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "ground_velocity_filter": 300,
+      "acceleration_x_q8": -90,
+      "max_speed_x_q8": 0
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "duck",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 11
+    },
+    {
+      "sprite_sheet_id": "duck",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 11
+    },
+    {
+      "sprite_sheet_id": "duck",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 11
+    },
+    {
+      "sprite_sheet_id": "duck",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 11
+    }
+  ]
+}

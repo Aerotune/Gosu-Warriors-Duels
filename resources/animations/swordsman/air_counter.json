@@ -1,0 +1,350 @@
+{
+  "hit_id": "air_counter",
+  "clash_frame_events": [
+    {
+      "buffer": {
+        "set_animation_frame": -16,
+        "set_animation_id": "jump_up_forward",
+        "dodge": 96,
+        "super_armor": 96
+      },
+      "status": "break"
+    }
+  ],
+  "before_frame_events": [
+    {
+      "after_frame": -4,
+      "on_ground": true,
+      "set_animation_id": "stand",
+      "set_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "frame": -1,
+      "set_animation_frame": -2
+    }
+  ],
+  "frames": [
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 6,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 6,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 6,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 6,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 6,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 6,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 7,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 7,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 7,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 7,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 7,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 7,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 8,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 8,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 8,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 8,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 8,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 8,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 9,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 9,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 9,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 9,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_counter",
+      "sprite_index": 9,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

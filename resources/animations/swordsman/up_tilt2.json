@@ -1,0 +1,200 @@
+{
+  "hit_id": "up_tilt",
+  "before_frame_events": [
+    {
+      "ground_velocity_filter": 9
+    },
+    {
+      "frame": 3,
+      "sfx": ["sword/swish/1", "sword/swish/2", "sword/swish/3"],
+      "volume": 0.5
+    },
+    { "frame": [-1,-2,-3], "frame_event": "can_ground_attack"},
+    {
+      "frame": "last",
+      "set_animation_id": "stand",
+      "set_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 1,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 1,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 2,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "hit_effect": "up_tilt2",
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 4,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "hit_effect": "up_tilt2",
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 4,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "hit_effect": "up_tilt2",
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 5,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "hit_effect": "up_tilt2",
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 5,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 6,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 6,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 6,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 6,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 6,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 6,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 6,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 7,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 7,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 7,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 7,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 7,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 7,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 7,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 8,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 8,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 8,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 8,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 8,
+      "anchor_x": 20,
+      "anchor_y": 34
+    },
+    {
+      "sprite_sheet_id": "up_tilt",
+      "sprite_index": 8,
+      "anchor_x": 20,
+      "anchor_y": 34
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "hit_id": "block",
+  "default_hit_effect": "block",
+  "clash_frame_events": [
+    {
+      "new_hit": "block",
+      "status": "break"
+    }
+  ],
+  "before_frame_events": [
+    {
+      "frame_event": "can_ground_jump"
+    },
+    {
+      "frame": "last",
+      "buffer_animation_id": "block_up",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "block_high_to_up",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_high_to_up",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_up",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_up",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_up",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_up",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_up",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "before_frame_events": [
+    {
+      "frame": 1,
+      "sfx": "flash_step",
+      "volume": 0.6
+    },
+    {
+      "before_frame": 5,
+      "dodge": true,
+      "super_armor": true
+    },
+    {
+      "frame": 4,
+      "swap_with_child": "air_down_special_projectile"
+    },
+    {
+      "after_frame": 4,
+      "velocity_x_q8": 0,
+      "velocity_y_q8": 0
+    },
+    {
+      "frame": "last",
+      "buffer_animation_id": "up_special_stand",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_down_special_teleport",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

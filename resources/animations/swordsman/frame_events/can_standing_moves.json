@@ -1,0 +1,4 @@
+[
+  { "frame_event": "can_ground_attack" },
+  { "frame_event": "can_ground_jump" }
+]

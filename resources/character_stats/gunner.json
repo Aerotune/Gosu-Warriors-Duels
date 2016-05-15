@@ -1,0 +1,7 @@
+{
+  "gravity": 39,
+  "ground_friction": 7,
+  "ground_velocity_filter": 21,
+  "max_fall_speed": 800,
+  "velocity_y_filter": 7
+}

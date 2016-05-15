@@ -1,0 +1,31 @@
+{
+  "before_frame_events": [
+
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "grabbed",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "grabbed",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "grabbed",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "grabbed",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

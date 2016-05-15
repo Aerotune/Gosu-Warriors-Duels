@@ -1,0 +1,11 @@
+[
+  {
+    "on_ground": false,
+    "key_down": "jump",
+    "time_since_key_down": 6,
+    "can_consume": "air_jump",
+    "buffer_animation_id": "air_jump",
+    "buffer_animation_frame": 0,
+    "status": "break"
+  }
+]

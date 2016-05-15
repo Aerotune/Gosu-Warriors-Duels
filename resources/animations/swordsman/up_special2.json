@@ -1,0 +1,172 @@
+{
+  "hit_id": "up_special2",
+  "before_frame_events": [
+    {
+      "ignore_unit_collision": true
+    },
+    {
+      "frame": 0,
+      "new_hit": "up_special2"
+    },
+    {
+      "velocity_x_q8": 0
+    },
+    {
+      "frame": 3,
+      "sfx": ["swish/1", "swish/2", "swish/3", "swish/4", "swish/5"],
+      "volume": 0.6
+    },
+    {
+      "key_down": "down",
+      "frame": "last",
+      "buffer_animation_id": "up_special_to_idle",
+      "buffer_animation_frame": 0
+    },
+    {
+      "key_down": "jump",
+      "time_since_key_down": 6,
+      "frame": "last",
+      "buffer_animation_id": "up_special_pre_jump",
+      "buffer_animation_frame": 0
+    },
+    {
+      "frame": "last",
+      "key_down": "special",
+      "time_since_key_down": 6,
+      "new_hit": "up_special2",
+      "buffer_animation_id": "up_special2",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "frame": "last",
+      "buffer_animation_id": "up_special_stand",
+      "buffer_animation_frame": 0
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 4,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 4,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 4,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "hit_effect": "up_special2",
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 5,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "hit_effect": "up_special2",
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 5,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "hit_effect": "up_special2",
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 5,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 6,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 6,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 7,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 7,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 8,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 8,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 8,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 8,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 9,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 9,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 9,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 10,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 10,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 10,
+      "anchor_x": 20,
+      "anchor_y": 40
+    }
+  ]
+}

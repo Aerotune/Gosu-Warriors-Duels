@@ -1,0 +1,138 @@
+{
+  "hit_id": "dash_attack",
+  "before_frame_events": [
+    {
+      "ground_friction": 9,
+      "ground_velocity_filter": 2
+    },
+    {
+      "after_frame": 4,
+      "key_up": "special",
+      "buffer_animation_id": "side_special_weak",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "frame": "last",
+      "buffer_animation_id": "side_special_strong",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 1,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 1,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 1,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 1,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 1,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 1,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 1,
+      "anchor_x": 20,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "dash_attack",
+      "sprite_index": 1,
+      "anchor_x": 20,
+      "anchor_y": 32
+    }
+  ]
+}

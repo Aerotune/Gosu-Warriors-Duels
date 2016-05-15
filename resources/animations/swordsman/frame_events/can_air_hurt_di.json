@@ -1,0 +1,26 @@
+[
+  {
+    "latest_key_down": "forward",
+    "keys": ["forward", "backward"],
+    "acceleration_x_q8": 13,
+    "max_speed_x_q8": 650
+  },
+  {
+    "latest_key_down": "backward",
+    "keys": ["forward", "backward"],
+    "acceleration_x_q8": -13,
+    "max_speed_x_q8": 650
+  },
+  {
+    "latest_key_down": "up",
+    "keys": ["up", "down"],
+    "acceleration_y_q8": -10,
+    "max_speed_y_q8": 700
+  },
+  {
+    "latest_key_down": "down",
+    "keys": ["up", "down"],
+    "acceleration_y_q8": 10,
+    "max_speed_y_q8": 700
+  }
+]

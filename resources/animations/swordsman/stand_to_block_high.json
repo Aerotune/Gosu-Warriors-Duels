@@ -1,0 +1,131 @@
+{
+  "hit_id": "block",
+  "default_hit_effect": "block",
+  "clash_frame_events": [
+    {
+      "new_hit": "block",
+      "status": "break"
+    }
+  ],
+  "before_frame_events": [
+    {
+      "frame": "last",
+      "buffer_animation_id": "block_high",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "key_up": "block",
+      "buffer_animation_id": "block_high_to_stand",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "latest_key_down": "up", "keys": ["up", "down", "forward", "backward"],
+      "buffer_animation_id": "block_high_to_up",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "latest_key_down": "down", "keys": ["up", "down", "forward", "backward"],
+      "buffer_animation_id": "block_low",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "latest_key_down": "backward", "keys": ["up", "down", "forward", "backward"],
+      "buffer_animation_id": "pre_block_back",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "latest_key_down": "forward",
+      "keys": ["forward", "backward"],
+      "acceleration_x_q8": 25,
+      "max_speed_x_q8": 280
+    },
+    {
+      "latest_key_down": "backward",
+      "keys": ["forward", "backward"],
+      "acceleration_x_q8": -25,
+      "max_speed_x_q8": 280
+    },
+    {
+      "frame": 1,
+      "sfx": "sword/unsheath"
+    },
+    { "frame_event": "can_ground_jump" },
+    {
+      "frame": 3,
+      "offset_x_q8": 256
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "stand_to_block_high",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "stand_to_block_high",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "stand_to_block_high",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "stand_to_block_high",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "stand_to_block_high",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "stand_to_block_high",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "stand_to_block_high",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "stand_to_block_high",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "stand_to_block_high",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "stand_to_block_high",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "stand_to_block_high",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

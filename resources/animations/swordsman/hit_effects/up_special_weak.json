@@ -1,0 +1,21 @@
+{
+  "priority": 0,
+  "can_clash": true,
+  "cause_clash": true,
+  "reflects_projectiles": true,
+  "clash_freeze_frames": 8,
+  "hit_keep_velocity_x_q8": 32,
+  "hit_keep_velocity_y_q8": 0,
+  "hit_transfer_velocity_x_q8": 0,
+  "hit_transfer_velocity_y_q8": 0,
+  "hit_acceleration_x_q8": 200,
+  "hit_acceleration_y_q8": -440,
+  "hit_max_speed_x_q8": 2000,
+  "hit_max_speed_y_q8": 2000,
+  "hit_freeze_frames": 6,
+  "hit_stun_frames": 30,
+  "hit_vfxs": ["sparks"],
+  "hit_sfxs": ["hit_light/1", "hit_light/2"],
+  "hit_shake": {"amount": 1.3, "duration": 2},
+  "damage": 75
+}

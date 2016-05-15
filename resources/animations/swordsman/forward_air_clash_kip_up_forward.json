@@ -1,0 +1,97 @@
+{
+  "before_frame_events": [
+    { "ignore_unit_collision": true },
+    {
+      "before_frame": 6, "dodge": true
+    },
+    {
+      "frame": "last",
+      "buffer_animation_id": "stand",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "after_frame": 2, "before_frame": -3,
+      "ground_friction": 0,
+      "ground_velocity_filter": 0
+    },
+    {
+      "after_frame": 2, "before_frame": 6,
+      "acceleration_x_q8": 120, "max_speed_x_q8": 450
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 0,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 0,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 1,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 1,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 2,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 2,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 3,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 3,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 4,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 4,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 5,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 5,
+      "anchor_x": 22,
+      "anchor_y": 40
+    }
+  ]
+}

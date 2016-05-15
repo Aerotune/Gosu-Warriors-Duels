@@ -1,0 +1,71 @@
+{
+  "before_frame_events": [
+    {
+      "key_down": "jump",
+      "time_since_key_down": 6,
+      "set_animation_id": "pre_jump",
+      "set_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "key_down": "dash",
+      "time_since_key_down": 6,
+      "set_animation_id": "air_dash_backward",
+      "set_animation_frame": 0,
+      "factor_x": "invert",
+      "status": "break"
+    },
+    {
+      "key_down": "forward",
+      "time_since_key_down": 8,
+      "frame": 2,
+      "set_animation_id": "walk_forward",
+      "set_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "frame": "last",
+      "set_animation_id": "stand",
+      "set_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "walk_turn_around",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "walk_turn_around",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "walk_turn_around",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "walk_turn_around",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "walk_turn_around",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "walk_turn_around",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

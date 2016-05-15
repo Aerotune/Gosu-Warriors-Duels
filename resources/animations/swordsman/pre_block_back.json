@@ -1,0 +1,83 @@
+{
+  "hit_id": "block",
+  "default_hit_effect": "block",
+  "clash_frame_events": [
+    {
+      "new_hit": "block",
+      "set_animation_id": "block_back_clash",
+      "set_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "before_frame_events": [
+    {
+      "frame": 1,
+      "sfx": ["sword/soft_swish/1", "sword/soft_swish/2", "sword/soft_swish/3"]
+    },
+    {
+      "frame_event": "can_ground_jump"
+    },
+    {
+      "key_up": "backward",
+      "buffer_animation_id": "post_block_back",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "frame": "last",
+      "buffer_animation_id": "block_back",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "pre_block_back",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "pre_block_back",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "pre_block_back",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "pre_block_back",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "block_back",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

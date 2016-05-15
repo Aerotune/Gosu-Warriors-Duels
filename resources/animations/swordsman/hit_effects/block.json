@@ -1,0 +1,7 @@
+{
+  "priority": 10,
+  "can_clash": true,
+  "cause_clash": true,
+  "clash_freeze_frames": 3,
+  "reflects_projectiles": false
+}

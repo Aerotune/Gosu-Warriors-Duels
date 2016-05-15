@@ -1,0 +1,481 @@
+{
+  "before_frame_events": [
+    {
+      "frame": 3,
+      "key_down": "block",
+      "velocity_factor_x_q8": -230
+    },
+    {
+      "frame": 3,
+      "key_down": "backward", "time_since_key_down": 4,
+      "latest_key_down": "backward", "keys": ["forward", "backward"],
+      "factor_x": "invert"
+    },
+    {
+      "frame": [0, 10, 20],
+      "sfx": ["sword/soft_swish/1", "sword/soft_swish/2", "sword/soft_swish/3"]
+    },
+    {
+      "frame": 0,
+      "acceleration_y_q8": -2000,
+      "max_speed_y_q8": 400
+    },
+    {
+      "latest_key_down": "forward",
+      "keys": ["forward", "backward"],
+      "acceleration_x_q8": 19,
+      "max_speed_x_q8": 700
+    },
+    {
+      "latest_key_down": "backward",
+      "keys": ["forward", "backward"],
+      "acceleration_x_q8": -19,
+      "max_speed_x_q8": 700
+    },
+    {
+      "acceleration_y_q8": -50,
+      "max_speed_y_q8": 200
+    },
+    {
+      "acceleration_y_q8": 30,
+      "max_speed_y_q8": 700
+    },
+    {
+      "acceleration_x_q8": -8,
+      "max_speed_x_q8": 0
+    },
+    {
+      "acceleration_x_q8": 8,
+      "max_speed_x_q8": 0
+    },
+    {
+      "frame": 19,
+      "new_hit": "air_down_special_projectile",
+      "spawn_projectile": "air_down_special_projectile"
+    },
+    {
+      "after_frame": 18,
+      "super_armor": true
+    },
+    {
+      "frame": "last",
+      "set_animation_frame": 21
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 6,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 6,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 7,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 8,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 8,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 8,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 8,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 9,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 9,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 9,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 9,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 10,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 10,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 10,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 10,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 11,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 11,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 11,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 11,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 12,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 12,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 12,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 12,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 13,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 13,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 13,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 13,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 14,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 14,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 14,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 14,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 14,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 14,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 14,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 14,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 14,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 13,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 13,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 13,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 12,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 12,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 12,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 12,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 11,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 11,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 11,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 10,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 10,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 10,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 9,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 9,
+      "anchor_x": 16,
+      "anchor_y": 22
+    },
+    {
+      "sprite_sheet_id": "air_down_special",
+      "sprite_index": 9,
+      "anchor_x": 16,
+      "anchor_y": 22
+    }
+  ]
+}

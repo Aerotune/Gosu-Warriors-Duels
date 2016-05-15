@@ -1,0 +1,51 @@
+{
+  "before_frame_events": [
+    {
+      "key_down": "jump",
+      "frame": "last",
+      "buffer_animation_id": "up_special_jump",
+      "buffer_animation_frame": 0,
+      "velocity_y_q8": -1900,
+      "status": "break"
+    },
+    {
+      "frame": "last",
+      "buffer_animation_id": "up_special_jump",
+      "buffer_animation_frame": 0,
+      "velocity_y_q8": -980,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "up_special_pre_jump",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "up_special_pre_jump",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "up_special_pre_jump",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "up_special_pre_jump",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "up_special_pre_jump",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

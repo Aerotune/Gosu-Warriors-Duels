@@ -1,0 +1,74 @@
+{
+  "hit_id": "up_special",
+  "before_frame_events": [
+    {
+      "ignore_unit_collision": true
+    },
+    {
+      "frame": 0,
+      "new_hit": "up_special"
+    },
+    {
+      "velocity_x_q8": 0
+    },
+    {
+      "frame": 2,
+      "sfx": ["swish/1", "swish/2", "swish/3", "swish/4", "swish/5"],
+      "volume": 0.8
+    },
+    {
+      "frame": "last",
+      "buffer_animation_id": "up_special2",
+      "buffer_animation_frame": 0
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 0,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 1,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "hit_effect": "up_special_strong",
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 2,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "hit_effect": "up_special_strong",
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 2,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "hit_effect": "up_special_strong",
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 3,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "hit_effect": "up_special_strong",
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 3,
+      "anchor_x": 20,
+      "anchor_y": 40
+    },
+    {
+      "hit_effect": "up_special_strong",
+      "sprite_sheet_id": "up_special",
+      "sprite_index": 3,
+      "anchor_x": 20,
+      "anchor_y": 40
+    }
+  ]
+}
