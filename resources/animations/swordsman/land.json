@@ -1,18 +1,16 @@
 {
+  "on_set_events": [
+    {
+      "sfx": ["land/light"],
+      "volume": 0.1
+    }
+  ],
   "before_frame_events": [
     { 
       "after_frame": -6,
       "key_down": "forward",
       "acceleration_x_q8": 69,
       "max_speed_x_q8": 700
-    },
-    {
-      "after_frame": -4,
-      "latest_key_down": "down", "keys": ["up", "down"],
-      "key_down": "jump", "time_since_key_down": 6,
-      "buffer_animation_id": "low_slide_forward",
-      "buffer_animation_frame": 0,
-      "status": "break"
     },
     {
       "frame": [-1,-2,-3],

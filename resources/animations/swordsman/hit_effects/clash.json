@@ -1,6 +1,6 @@
 {
   "priority": -1,
-  "can_clash": true,
+  "can_clash": false,
   "cause_clash": false,
   "reflects_projectiles": false
 }

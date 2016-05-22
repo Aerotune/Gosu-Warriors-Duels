@@ -1,15 +1,25 @@
 {
   "before_frame_events": [
     {
+      "set_cooldown": "wall_cling",
+      "min_cooldown": 40
+    },
+    {
+      "frame_event": "can_aerial_attack"
+    },
+    {
+      "on_wall": false,
+      "set_animation_id": "jump_up_forward",
+      "set_animation_frame": 10,
+      "set_cooldown": "fast_fall",
+      "min_cooldown": 6,
+      "status": "break"
+    },
+    {
       "on_ground": true,
       "set_animation_id": "land",
       "set_animation_frame": -5,
       "status": "break"
-    },
-    {
-      "frame": "last",
-      "set_cooldown": "wall_cling",
-      "min_cooldown": 40
     },
     {
       "frame": "last",
@@ -36,36 +46,20 @@
       "set_animation_frame": 8,
       "set_cooldown": "air_jump",
       "min_cooldown": 9,
-      "velocity_x_q8": 370,
-      "velocity_y_q8": -870,
+      "velocity_x_q8": 350,
+      "velocity_y_q8": -840,
       "status": "break"
     },
     {
       "after_frame": 12,
-      "key_down": "down", "time_since_key_down": 6,
-      "set_cooldown": "wall_cling",
-      "min_cooldown": 40
-    },
-    {
-      "after_frame": 12,
-      "key_down": "down", "time_since_key_down": 6,
-      "set_animation_id": "jump_up_forward",
-      "set_animation_frame": 10,
-      "velocity_x_q8": 200,
-      "set_cooldown": "fast_fall",
-      "min_cooldown": 6,
-      "status": "break"
-    },
-    {
-      "except_frame": [1,2,3],
-      "time_since_key_down": 6,
-      "key_down": "forward",
-      "set_animation_id": "jump_up_forward",
-      "set_animation_frame": 8,
-      "set_cooldown": "air_jump",
-      "min_cooldown": 9,
-      "velocity_x_q8": 370,
-      "velocity_y_q8": -870,
+      "any_key_down": ["down", "forward"], "time_since_key_down": 6,
+      "buffer": {
+        "set_animation_id": "jump_up_forward",
+        "set_animation_frame": 10,
+        "velocity_x_q8": 200,
+        "set_cooldown": "fast_fall",
+        "min_cooldown": 6
+      },
       "status": "break"
     }
   ],

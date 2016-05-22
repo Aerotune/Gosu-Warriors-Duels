@@ -1,0 +1,13 @@
+NoMethodError: undefined method `[]' for nil:NilClass
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1254:in `block in draw_effects'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1250:in `each'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1250:in `draw_effects'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1223:in `block (3 levels) in draw'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1222:in `translate'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1222:in `block (2 levels) in draw'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1116:in `scale'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1116:in `block in draw'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1115:in `clip_to'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1115:in `draw'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:84:in `draw'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:96:in `<main>'

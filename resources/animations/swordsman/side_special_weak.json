@@ -7,8 +7,8 @@
     {
       "frame": 0,
       "sfx": ["sword/single_stroke_swing/1", "sword/single_stroke_swing/2"],
-      "acceleration_x_q8": 450,
-      "max_speed_x_q8": 900
+      "acceleration_x_q8": 650,
+      "max_speed_x_q8": 850
     },
     {
       "before_frame": -10,

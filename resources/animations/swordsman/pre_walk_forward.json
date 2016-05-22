@@ -8,8 +8,8 @@
     {
       "latest_key_down": "forward",
       "keys": ["forward", "backward"],
-      "acceleration_x_q8": 100,
-      "max_speed_x_q8": 1100
+      "acceleration_x_q8": 120,
+      "max_speed_x_q8": 650
     },
     {
       "frame": "last",

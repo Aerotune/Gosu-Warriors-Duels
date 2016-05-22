@@ -4,7 +4,7 @@
   "cause_clash": true,
   "reflects_projectiles": false,
   "hit_keep_velocity_x_q8": 32,
-  "hit_keep_velocity_y_q8": 64,
+  "hit_keep_velocity_y_q8": 0,
   "hit_transfer_velocity_x_q8": 0,
   "hit_transfer_velocity_y_q8": 0,
   "hit_acceleration_x_q8": 0,
@@ -15,6 +15,6 @@
   "hit_stun_frames": 45,
   "hit_vfxs": ["sparks", "big_splat", "slice"],
   "hit_sfxs": ["sword/spike"],
-  "hit_shake": {"amount": 0.9, "duration": 2},
-  "damage": 70
+  "hit_shake": {"amount": 1.9, "duration": 4},
+  "damage": 90
 }

@@ -1,5 +1,6 @@
 {
   "hit_id": "up_special2",
+  "hit_hurtable": true,
   "before_frame_events": [
     {
       "ignore_unit_collision": true

@@ -1,0 +1,6 @@
+NoMethodError: undefined method `[]' for nil:NilClass
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:793:in `apply_hit'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:706:in `process_hit_collision'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:479:in `update'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:80:in `update'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:96:in `<main>'

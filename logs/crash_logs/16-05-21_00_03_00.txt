@@ -1,0 +1,12 @@
+LocalJumpError: unexpected return
+	/Users/bue/.rvm/gems/ruby-2.1.5@game/gems/filewatcher-0.5.3/lib/filewatcher.rb:38:in `block in watch'
+	/Users/bue/.rvm/gems/ruby-2.1.5@game/gems/ashton-0.1.6/lib/ashton/shader.rb:92:in `call'
+	/Users/bue/.rvm/gems/ruby-2.1.5@game/gems/ashton-0.1.6/lib/ashton/shader.rb:92:in `map'
+	/Users/bue/.rvm/gems/ruby-2.1.5@game/gems/ashton-0.1.6/lib/ashton/shader.rb:92:in `uniform_name_from_symbol'
+	/Users/bue/.rvm/gems/ruby-2.1.5@game/gems/ashton-0.1.6/lib/ashton/shader.rb:160:in `[]='
+	/Users/bue/.rvm/gems/ruby-2.1.5@game/gems/ashton-0.1.6/lib/ashton/shader.rb:146:in `method_missing'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1157:in `block in draw'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1156:in `scale'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1156:in `draw'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:84:in `draw'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:96:in `<main>'

@@ -95,10 +95,10 @@ class Game
     @projectiles = []
     @freeze_frames = 0 #!!! crashes when not initialized as zero
     
-    if $intro && !$music.playing?
-      $intro.volume = 0.35
-      $intro.play unless $music.playing?
-    end
+    #if $intro && !$music.playing?
+    #  $intro.volume = 0.35
+    #  $intro.play unless $music.playing?
+    #end
   end
   
   def button_down id
@@ -120,11 +120,11 @@ class Game
   def update
     #!!!
     #$gosu_blocks.clear if defined? $gosu_blocks # Workaround for Gosu bug (0.7.45)
-    $intro.volume = 0.35
-    $music.volume = 0.35
-    if !$intro.playing?
-      $music.play true
-    end
+    #$intro.volume = 0.35
+    #$music.volume = 0.35
+    #if !$intro.playing?
+    #  $music.play true
+    #end
     #p @character1['super_armor']
     @background_effects.delete_if {|w| w.dead? }
     @background_effects.each {|w| w.update }
@@ -317,9 +317,17 @@ class Game
           left_character['velocity_x_q8']  = (left_character_velocity_x_q8 + right_character_velocity_x_q8) / 2
           right_character['velocity_x_q8'] = (left_character_velocity_x_q8 + right_character_velocity_x_q8) / 2
         when [true, false]
-          right_character['offset_x_q8'] = left_character_velocity_x_q8 if left_character_velocity_x_q8 > right_character_velocity_x_q8
+          if left_character_velocity_x_q8 > right_character_velocity_x_q8
+            left_character['ground_friction'] = 5
+            left_character['ground_velocity_filter'] = 50
+            right_character['offset_x_q8'] = left_character_velocity_x_q8
+          end
         when [false, true]
-          left_character['offset_x_q8'] = right_character_velocity_x_q8 if right_character_velocity_x_q8 < left_character_velocity_x_q8
+          if right_character_velocity_x_q8 < left_character_velocity_x_q8
+            right_character['ground_friction'] = 5
+            right_character['ground_velocity_filter'] = 50
+            left_character['offset_x_q8'] = right_character_velocity_x_q8
+          end
         when [false, false]
           dx_q8 = character_overlap_x_q8.abs / 2
           left_character['offset_x_q8']   += -dx_q8 * 8 / 10
@@ -392,20 +400,23 @@ class Game
         hit2_index = @character2['hit_index'][hit2_id]
         
         #!!!Clash!!!
-        if true#@character2['hit_immunity'][hit1_id] < hit1_index && @character1['hit_immunity'][hit2_id] < hit2_index
-          if hit_effect_1 && hit_effect_2
-            hit_immunity_granted = false
+        #if true#@character2['hit_immunity'][hit1_id] < hit1_index && @character1['hit_immunity'][hit2_id] < hit2_index
+        
+        if hit_effect_1 && hit_effect_2
+          unless hit_effect_1["type"] == "counter" && hit_effect_2["type"] == "counter"
+            hit_immunity_granted1 = false
+            hit_immunity_granted2 = false
             freeze_frames_1 = hit_effect_1['clash_freeze_frames']
             freeze_frames_2 = hit_effect_2['clash_freeze_frames']
             
             if @character2['hit_immunity'][hit1_id] < hit1_index
-              if hit_effect_2['can_clash'] && (hit_effect_2['priority'] >= hit_effect_1['priority'])
+              if (hit_effect_2['priority'] >= hit_effect_1['priority'])
                 @character2['hit_immunity'][hit1_id] = hit1_index
-                hit_immunity_granted = true
+                hit_immunity_granted2 = true
               end
             end
             
-            if hit_effect_2['can_clash'] && hit_effect_1['cause_clash']# && (hit_effect_2['priority'] <= hit_effect_1['priority'])
+            if hit_effect_1['cause_clash']# && (hit_effect_2['priority'] <= hit_effect_1['priority'])
               character2_animation['clash_frame_events'].to_a.each do |frame_event|
                 status = process_frame_event character2_animation, @character2, frame_event
                 break if status == :break
@@ -414,13 +425,13 @@ class Game
             
             
             if @character1['hit_immunity'][hit2_id] < hit2_index
-              if hit_effect_1['can_clash'] && (hit_effect_1['priority'] >= hit_effect_2['priority'])
+              if (hit_effect_1['priority'] >= hit_effect_2['priority'])
                 @character1['hit_immunity'][hit2_id] = hit2_index
-                hit_immunity_granted = true
+                hit_immunity_granted1 = true
               end
             end
             
-            if hit_effect_1['can_clash'] && hit_effect_2['cause_clash']
+            if hit_effect_2['cause_clash']
               character1_animation['clash_frame_events'].to_a.each do |frame_event|
                 status = process_frame_event character1_animation, @character1, frame_event
                 break if status == :break
@@ -430,26 +441,44 @@ class Game
           
                  
             
-            if hit_immunity_granted
-              if freeze_frames_1 && freeze_frames_2
-                if freeze_frames_1 != 0 && freeze_frames_2 != 0
-                  @freeze_frames += (freeze_frames_1.to_i + freeze_frames_2.to_i) * 3 / 4
+            if hit_immunity_granted1 || hit_immunity_granted2
+              unless hit_effect_1['disable_clash_effect'] && hit_effect_2['disable_clash_effect']
+                if freeze_frames_1 && freeze_frames_2
+                  if freeze_frames_1 != 0 && freeze_frames_2 != 0
+                    @freeze_frames += (freeze_frames_1.to_i + freeze_frames_2.to_i) * 3 / 4
+                  end
+                end
+                
+                # Average position of collision pixels
+                pos = collisions[:clash].reduce {|pos1,pos2| [pos1[0]+pos2[0], pos1[1]+pos2[1]]}
+                pos[0] /= collisions[:clash].length
+                pos[1] /= collisions[:clash].length
+                
+                hurt1 = (animation2['hit_hurtable'] && @character2['hit_immunity'][hit1_id] < hit1_index)
+                hurt2 = (animation1['hit_hurtable'] && @character1['hit_immunity'][hit2_id] < hit2_index)
+                unless hurt1 || hurt2
+                  if animation2['hit_hurtable'] || animation1['hit_hurtable']
+                    @effects << {
+                      type: :clash,
+                      time: @time,
+                      x: pos[0],
+                      y: pos[1],
+                      duration: 15
+                    }
+                  else
+                    @effects << {
+                      type: :hit,
+                      vfx: 'sparks',
+                      time: @time,
+                      x: pos[0],
+                      y: pos[1],
+                      duration: 15
+                    }
+                  end
+                  @@clash_sfx.play 1.0*@volume, 0.85+rand*0.2
+                  
                 end
               end
-              @@clash_sfx.play 1.0*@volume, 0.85+rand*0.2
-              # Average position of collision pixels
-              pos = collisions[:clash].reduce {|pos1,pos2| [pos1[0]+pos2[0], pos1[1]+pos2[1]]}
-              pos[0] /= collisions[:clash].length
-              pos[1] /= collisions[:clash].length
-        
-              @effects << {
-                type: :hit,
-                vfx: 'sparks',
-                time: @time,
-                x: pos[0],
-                y: pos[1],
-                duration: 15
-              }
             end
             
             
@@ -461,11 +490,23 @@ class Game
         if collisions[:hit1].length > 0
           process_hit_collision collisions[:hit1], @character1, @character2
         end
+        
+        if collisions[:clash].length > 0
+          if animation2['hit_hurtable']
+            process_hit_collision collisions[:clash], @character1, @character2
+          end
+        end
       end
       
       unless @character1['dodge']
         if collisions[:hit2].length > 0
           process_hit_collision collisions[:hit2], @character2, @character1
+        end
+        
+        if collisions[:clash].length > 0
+          if animation1['hit_hurtable']
+            process_hit_collision collisions[:clash], @character2, @character1
+          end
         end
       end
     end
@@ -502,6 +543,21 @@ class Game
     @time += 1
     @character1['time'] = @time
     @character2['time'] = @time
+  end
+  
+  def spawn_effect effect_id, pos, factor_x, parent_id=nil
+    @effects << {
+      type: :hit,
+      vfx: effect_id,
+      parent_id: parent_id,
+      factor_x: factor_x,
+      color: 0x88FFFFFF,
+      time: @time,
+      x: pos[0],
+      y: pos[1],
+      fps: 45,
+      duration: 30
+    }
   end
   
   def spawn_clash_effect collisions
@@ -731,7 +787,7 @@ class Game
     end
     
     unless hurting_character['super_armor']
-      hit_velocity_x_q8  = hurting_character['velocity_x_q8']
+      hit_velocity_x_q8  = hurting_character['prev_velocity_x_q8'].to_i
       hit_velocity_x_q8  = ((hit_data['hit_keep_velocity_x_q8'].to_i * hit_velocity_x_q8)>>8) if hit_data['hit_keep_velocity_x_q8']
       acceleration_x_q8  = hit_data['hit_acceleration_x_q8'].to_i * hit_factor_x
       acceleration_x_q8 += (hit_data['hit_transfer_velocity_x_q8'].to_i * hitting_character['velocity_x_q8'])>>8
@@ -744,7 +800,7 @@ class Game
         hit_velocity_x_q8 = -max_speed_x_q8 if hit_velocity_x_q8 < -max_speed_x_q8
       end
     
-      hit_velocity_y_q8  = hurting_character['velocity_y_q8']
+      hit_velocity_y_q8  = hurting_character['prev_velocity_y_q8'].to_i
       hit_velocity_y_q8  = ((hit_data['hit_keep_velocity_y_q8'].to_i * hit_velocity_y_q8)>>8) if hit_data['hit_keep_velocity_y_q8']      
       acceleration_y_q8  = hit_data['hit_acceleration_y_q8'].to_i
       acceleration_y_q8 += (hit_data['hit_transfer_velocity_y_q8'].to_i * hitting_character['velocity_y_q8'])>>8
@@ -760,6 +816,7 @@ class Game
       if hit_data["hit_stun_frames"].to_i > 0
         hitting_character['z'] = 0
         hurting_character['z'] = -1
+        hurting_character['buffer'] = { 'fast_fall' => false }
         hurting_character['buffer_animation_id']    = "hurt_walk_backward"
         hurting_character['buffer_animation_frame'] = -(hitting_frame["hit_stun_frames"] || hit_data["hit_stun_frames"]).to_i
         hurting_character['buffer_factor_x']        = -hit_factor_x
@@ -786,7 +843,8 @@ class Game
       hit_sfx = hit_data['hit_sfxs'][rand(hit_data['hit_sfxs'].length)]
       hit_sfx = @@sfx[hit_sfx]
       volume = hit_data['volume'] || 0.8
-      hit_sfx.play volume*@volume, 0.94+rand*0.12 if hit_sfx
+      speed = hit_data['speed'] || 0.94+rand*0.12
+      hit_sfx.play volume*@volume, speed+(rand*0.15-0.075)*speed if hit_sfx
     end
     
     if hit_data['hit_sfxs2']
@@ -832,7 +890,7 @@ class Game
       hurting_character["status_effects"] << status_effect
     end
     
-    hitting_character['on_hit_frame_events'].to_a.each do |frame_event|
+    hitting_animation['on_hit_frame_events'].to_a.each do |frame_event|
       status = process_frame_event hitting_animation, hitting_character, frame_event
       break if status == :break
     end
@@ -862,8 +920,13 @@ class Game
     character['offset_x_q8'] = 0
     character['offset_y_q8'] = 0
     
+    character['prev_velocity_x_q8'] = character['velocity_x_q8']
+    character['prev_velocity_y_q8'] = character['y_q8']-character['prev_y_q8']#character['velocity_y_q8']
+    
     if on_ground? character
       character['y_q8'] = ground_y_q8
+      character['fast_fall'] = false
+      
       if character['velocity_y_q8'] > ground_bounce_min_speed_q8 && character['animation_id'].match(/hurt/) || character['buffer_animation_id'].to_s.match(/hurt/)
         character['velocity_y_q8'] = character['velocity_y_q8'] * ground_bounce_factor_q8 / 256
       else
@@ -891,14 +954,31 @@ class Game
     
     
     
-    if character['velocity_y_q8'] < max_fall_speed
-      character['velocity_y_q8'] += gravity if character['y_q8'] < ground_y_q8
-      character['velocity_y_q8'] = max_fall_speed if character['velocity_y_q8'] > max_fall_speed
+    if character['fast_fall']
+      character['velocity_y_q8'] = character_stats['fast_fall_speed']
+    else
+      if character["animation_id"].match /hurt/
+        if character['velocity_y_q8'] < max_fall_speed
+          character['velocity_y_q8'] += gravity if character['y_q8'] < ground_y_q8
+          character['velocity_y_q8'] = max_fall_speed if character['velocity_y_q8'] > max_fall_speed
+        end
+      else
+        character['velocity_y_q8'] += gravity if character['y_q8'] < ground_y_q8
+        character['velocity_y_q8'] = max_fall_speed if character['velocity_y_q8'] > max_fall_speed
+      end
     end
   end
   
   def frame_event_systems_stack
     [
+      "on_ground",
+      "on_wall",
+      "not_facing",
+      "facing",
+      "is_falling",
+      "is_fast_falling",
+      "can_consume",
+      "speed_x_q8_above",
       "frame",
       "after_frame",
       "before_frame",
@@ -907,14 +987,8 @@ class Game
       "key_up",
       "key_down",
       "any_key_down",
+      "double_tap",
       'opponent_distance_more_than',
-      "on_ground",
-      "on_wall",
-      "not_facing",
-      "facing",
-      "is_falling",
-      "can_consume",
-      "speed_x_q8_above",
       ## Checks above
       ## Updates below
       "swap_with_child",
@@ -926,6 +1000,8 @@ class Game
       "grab",
       "dodge",
       "super_armor",
+      "land_frame_index",
+      "fast_fall",
       "velocity_factor_x_q8",
       "velocity_factor_y_q8",
       "acceleration_x_q8",
@@ -938,13 +1014,17 @@ class Game
       "spawn_projectile",
       "despawn",
       "set_cooldown",
+      "vfx",
       "sfx",
       "buffer",
       "buffer_animation_id",
       "buffer_animation_frame",
       "draw_on_canvas",
-      "set_animation_id",
       "set_animation_frame",
+      "add_animation_frame",
+      "min_animation_frame",
+      "max_animation_frame",
+      "set_animation_id",
       "frame_event",
       "status"
     ]
@@ -1180,23 +1260,30 @@ class Game
       else
         next
       end
-      index = (@time-effect[:time])/2
+      rate = 60.0/(effect[:fps] || 30.0)
+      index = (@time-effect[:time])/rate
       image = images[index]
       factor_x = effect[:factor_x] || 1
       draw_x = effect[:x]-16*factor_x
       draw_y = effect[:y]-16
       next unless image
       
+      color = effect[:color] || 0xFF_FFFFFF
+      
       case effect[:parent_id]
       when 1
-        image.draw draw_x, draw_y, z, factor_x, 1, 0xFF_FFFFFF
+        image.draw draw_x, draw_y, z, factor_x, 1, color
       when 2
         $window.post_process @@color_shader do
-          image.draw draw_x, draw_y, z, factor_x, 1, 0xFF_FFFFFF
+          image.draw draw_x, draw_y, z, factor_x, 1, color
         end
       else
-        $window.post_process @@clash_shader do
-          image.draw draw_x, draw_y, z, factor_x, 1, 0xFF_FFFFFF
+        if effect[:vfx] == 'air_swirl_diagonal'
+          image.draw draw_x, draw_y, z, factor_x, 1, color
+        else
+          $window.post_process @@clash_shader do
+            image.draw draw_x, draw_y, z, factor_x, 1, color
+          end
         end
       end
     end
@@ -1232,11 +1319,12 @@ class Game
     @@color_overlay_shader.b = 0
     
     if @character1['dodge'] && @character1['super_armor']
-      @@color_overlay_shader.r = 0.45+rand*0.5
-      @@color_overlay_shader.g = 0.15+rand*0.05
-      @@color_overlay_shader.b = 0.3+rand*0.25
+      v = rand*0.3+0.45
+      @@color_overlay_shader.r = v+rand*0.15
+      @@color_overlay_shader.g = v
+      @@color_overlay_shader.b = v
     elsif @character1['dodge']
-      v = rand*0.2+0.55
+      v = rand*0.3+0.45
       @@color_overlay_shader.r = v
       @@color_overlay_shader.g = v
       @@color_overlay_shader.b = v
@@ -1270,14 +1358,15 @@ class Game
     @@color_overlay_shader.b = 0
     
     if @character2['dodge'] && @character2['super_armor']
-      @@color_overlay_shader.r = 0.3+rand*0.25
-      @@color_overlay_shader.g = 0.15+rand*0.05
-      @@color_overlay_shader.b = 0.45+rand*0.5
-    elsif @character2['dodge']
-      v = rand*0.2+0.55
+      v = rand*0.3+0.45
       @@color_overlay_shader.r = v
       @@color_overlay_shader.g = v
       @@color_overlay_shader.b = v
+    elsif @character2['dodge']
+      v = rand*0.3+0.45
+      @@color_overlay_shader.r = v
+      @@color_overlay_shader.g = v
+      @@color_overlay_shader.b = v+rand*0.15
     elsif @character2['super_armor']
       v = rand*0.15+0.4
       @@color_overlay_shader.b = v

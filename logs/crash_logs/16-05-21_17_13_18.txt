@@ -1,0 +1,9 @@
+NoMethodError: undefined method `[]' for nil:NilClass
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/frame_event_systems/set_animation_id.rb:10:in `block in <top (required)>'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:982:in `call'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:982:in `block in process_frame_event'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:978:in `each'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:978:in `process_frame_event'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:201:in `update'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:80:in `update'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:96:in `<main>'

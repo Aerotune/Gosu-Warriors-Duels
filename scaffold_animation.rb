@@ -55,7 +55,7 @@ animation_file_path = File.join(animations_dir, "#{animation_id}.json")
 
 require 'json'
 require 'fileutils'
-animation_json = JSON.pretty_generate 'before_frame_events' => [], 'frames' => frames
+animation_json = JSON.pretty_generate 'hit_id' => animation_id, 'before_frame_events' => [], 'frames' => frames
 FileUtils.mkdir_p animations_dir
 File.open animation_file_path, 'w+' do |f|
   f << animation_json

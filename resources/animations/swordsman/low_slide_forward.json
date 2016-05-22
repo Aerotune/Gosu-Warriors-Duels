@@ -3,8 +3,8 @@
     { "ignore_unit_collision": true, "before_frame": -15 },
     {
       "frame": 0,
-      "acceleration_x_q8": 500,
-      "max_speed_x_q8": 700,
+      "acceleration_x_q8": 800,
+      "max_speed_x_q8": 1000,
       "sfx": ["slide/1", "slide/2"]
     },
     {
@@ -12,34 +12,29 @@
       "dodge": true
     },
     {
-      "before_frame": -7,
-      "ground_friction": 5,
-      "ground_velocity_filter": 3
+      "before_frame": -14,
+      "ground_friction": 0,
+      "ground_velocity_filter": 15
     },
     {
       "after_frame": 14, "before_frame": -10,
       "key_up": "special", "time_since_key_up": 15,
-      "buffer_animation_frame": -10
+      "buffer_animation_frame": -5
     },
     {
-      "frame": -10,
+      "frame": -4,
       "facing": "opponent",
       "set_animation_id": "low_slide_forward_to_stand",
       "set_animation_frame": 0,
       "status": "break"
     },
     {
-      "frame": -10,
-      "set_animation_id": "duck",
-      "set_animation_frame": 0,
-      "factor_x": "invert",
-      "status": "break"
-    },
-    {
       "frame": "last",
-      "set_animation_id": "stand",
-      "set_animation_frame": 0,
-      "factor_x": "invert",
+      "buffer": {
+        "set_animation_id": "duck",
+        "set_animation_frame": 0,
+        "factor_x": "invert"
+      },
       "status": "break"
     }
   ],
@@ -274,12 +269,6 @@
     },
     {
       "sprite_sheet_id": "low_slide_forward",
-      "sprite_index": 7,
-      "anchor_x": 16,
-      "anchor_y": 32
-    },
-    {
-      "sprite_sheet_id": "low_slide_forward",
       "sprite_index": 8,
       "anchor_x": 16,
       "anchor_y": 32
@@ -287,36 +276,6 @@
     {
       "sprite_sheet_id": "low_slide_forward",
       "sprite_index": 8,
-      "anchor_x": 16,
-      "anchor_y": 32
-    },
-    {
-      "sprite_sheet_id": "low_slide_forward",
-      "sprite_index": 8,
-      "anchor_x": 16,
-      "anchor_y": 32
-    },
-    {
-      "sprite_sheet_id": "low_slide_forward",
-      "sprite_index": 9,
-      "anchor_x": 16,
-      "anchor_y": 32
-    },
-    {
-      "sprite_sheet_id": "low_slide_forward",
-      "sprite_index": 9,
-      "anchor_x": 16,
-      "anchor_y": 32
-    },
-    {
-      "sprite_sheet_id": "low_slide_forward",
-      "sprite_index": 9,
-      "anchor_x": 16,
-      "anchor_y": 32
-    },
-    {
-      "sprite_sheet_id": "low_slide_forward",
-      "sprite_index": 9,
       "anchor_x": 16,
       "anchor_y": 32
     }

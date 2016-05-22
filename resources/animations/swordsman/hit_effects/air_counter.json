@@ -1,9 +1,11 @@
 {
+  "type": "counter",
   "can_clash": true,
   "cause_clash": true,
-  "reflects_projectiles": false,
+  "disable_clash_effect": true,
+  "reflects_projectiles": true,
   "priority": 10,
-  "clash_freeze_frames": 11,
+  "clash_freeze_frames": 12,
   "hit_acceleration_x_q8": 20,
   "hit_max_speed_x_q8": 300
 }

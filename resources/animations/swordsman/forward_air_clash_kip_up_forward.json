@@ -2,7 +2,7 @@
   "before_frame_events": [
     { "ignore_unit_collision": true },
     {
-      "before_frame": 6, "dodge": true
+      "before_frame": 6, "//dodge": true
     },
     {
       "frame": "last",

@@ -1,0 +1,7 @@
+JSON::ParserError: 399: unexpected token at ']'
+	/Users/bue/.rvm/gems/ruby-2.1.5@game/gems/json-1.8.3/lib/json/common.rb:155:in `parse'
+	/Users/bue/.rvm/gems/ruby-2.1.5@game/gems/json-1.8.3/lib/json/common.rb:155:in `parse'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/animation_loader.rb:39:in `load_frame_event!'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/resource_file_watcher.rb:47:in `block (2 levels) in watch!'
+	/Users/bue/.rvm/gems/ruby-2.1.5@game/gems/filewatcher-0.5.3/lib/filewatcher.rb:60:in `watch'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/resource_file_watcher.rb:43:in `block in watch!'

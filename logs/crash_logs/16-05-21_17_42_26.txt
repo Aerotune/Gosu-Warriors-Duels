@@ -1,0 +1,4 @@
+NameError: undefined local variable or method `pos' for #<Game:0x007f9495313e50>
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:447:in `update'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:80:in `update'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:96:in `<main>'

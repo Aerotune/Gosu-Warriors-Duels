@@ -25,8 +25,8 @@
       "frame": 0,
       "latest_key_down": "backward",
       "keys": ["forward", "backward"],
-      "acceleration_x_q8": -375,
-      "max_speed_x_q8": 300
+      "acceleration_x_q8": -300,
+      "max_speed_x_q8": 250
     },
     {
       "frame": "last",
@@ -34,6 +34,7 @@
     },
     { "frame_event": "can_air_di" },
     { "frame_event": "can_aerial_attack" },
+    { "frame_event": "can_fast_fall" },
     { "frame_event": "can_wall_cling", "except_frame": [1,2,3]}
   ],
   "frames": [

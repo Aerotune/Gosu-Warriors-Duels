@@ -1,0 +1,8 @@
+[
+  {
+    "double_tap": "down",
+    "can_consume": "fast_fall",
+    "is_falling": true,
+    "fast_fall": true
+  }
+]

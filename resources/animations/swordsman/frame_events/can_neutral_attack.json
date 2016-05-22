@@ -1,6 +1,7 @@
 [
   {
     "on_ground": true,
+    "key_up": ["forward", "backward", "up", "down"],
     "key_down": "attack", "time_since_key_down": 6,
     "new_hit": "neutral_attack",
     "buffer_animation_id": "neutral_attack",

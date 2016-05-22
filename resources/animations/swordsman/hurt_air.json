@@ -1,6 +1,4 @@
 {
-  "hit_id": "hurt",
-  "default_hit_effect": "clash",
   "before_frame_events": [
     {
       "on_ground": false,

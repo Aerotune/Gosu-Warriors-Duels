@@ -1,5 +1,5 @@
 {
-  "priority": 1,
+  "priority": 2,
   "can_clash": true,
   "cause_clash": true,
   "clash_freeze_frames": 9,
@@ -15,6 +15,6 @@
   "hit_stun_frames": 28,
   "hit_vfxs": ["punch", "hit", "big_splat"],
   "hit_sfxs": ["sword/hit_heavy/1"],
-  "hit_shake": {"amount": 1.8, "duration": 5},
-  "damage": 25
+  "hit_shake": {"amount": 1.9, "duration": 5},
+  "damage": 35
 }

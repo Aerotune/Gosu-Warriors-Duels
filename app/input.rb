@@ -2,18 +2,26 @@ class Input
   def initialize character, key_layout
     @character = character
     @key_layout = key_layout
+    @prev_key_down_time = Hash.new {|h,k| h[k] = -256}
     @key_down_time = Hash.new {|h,k| h[k] = -256}
     @key_up_time   = Hash.new {|h,k| h[k] = -256}
   end
   
   def button_down time, id
     key = @key_layout[id]
-    @key_down_time[key] = time if key
+    if key
+      @prev_key_down_time = @key_down_time[key]
+      @key_down_time[key] = time
+    end
   end
   
   def button_up time, id
     key = @key_layout[id]
     @key_up_time[key] = time if key
+  end
+  
+  def double_tap? time, key
+    (time-@key_down_time[key]) < 6 && (@key_down_time[key]-@prev_key_down_time) < 12
   end
   
   def key_down? key

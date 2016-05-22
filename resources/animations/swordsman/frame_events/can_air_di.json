@@ -10,10 +10,5 @@
     "keys": ["forward", "backward"],
     "acceleration_x_q8": -19,
     "max_speed_x_q8": 1100
-  },
-  {
-    "key_down": "down", "time_since_key_down": 6,
-    "velocity_y_q8": 1050,
-    "is_falling": true
   }
 ]

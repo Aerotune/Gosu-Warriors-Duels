@@ -20,17 +20,17 @@
       "status": "break"
     },
     {
-      "ignore_unit_collision": true
+      "//ignore_unit_collision": true
     },
     {
       "key_down": "forward",
-      "acceleration_x_q8": 30,
-      "max_speed_x_q8": 560
+      "acceleration_x_q8": 33,
+      "max_speed_x_q8": 575
     },
     {
       "key_down": "backward",
-      "acceleration_x_q8": -30,
-      "max_speed_x_q8": 560
+      "acceleration_x_q8": -33,
+      "max_speed_x_q8": 575
     },
     {
       "frame": "last",

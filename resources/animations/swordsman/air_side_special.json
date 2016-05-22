@@ -28,13 +28,13 @@
       "frame": 9,
       "latest_key_down": "up",
       "keys": ["up", "down"],
-      "velocity_y_q8": -800
+      "velocity_y_q8": -850
     },
     {
       "frame": 9,
       "latest_key_down": "down",
       "keys": ["up", "down"],
-      "velocity_y_q8": 900
+      "velocity_y_q8": 950
     },
     {
       "after_frame": 3, "before_frame": 14,
@@ -45,7 +45,7 @@
     {
       "after_frame": 1, "before_frame": 15,
       "acceleration_x_q8": 110,
-      "max_speed_x_q8": 800
+      "max_speed_x_q8": 900
     },
     {
       "after_frame": 14,

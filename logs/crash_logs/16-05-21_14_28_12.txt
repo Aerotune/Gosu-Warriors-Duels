@@ -1,0 +1,11 @@
+RuntimeError: Couldn't find sprite_sheet_id down_air_fast_fall for entity_class swordsman
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/sprite_sheet.rb:7:in `load'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/sprite_sheets.rb:13:in `block (2 levels) in <top (required)>'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/sprite_sheets.rb:11:in `each'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/sprite_sheets.rb:11:in `block in <top (required)>'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/sprite_sheets.rb:7:in `each'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/sprite_sheets.rb:7:in `<top (required)>'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:55:in `require_relative'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:55:in `initialize'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:96:in `new'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:96:in `<main>'

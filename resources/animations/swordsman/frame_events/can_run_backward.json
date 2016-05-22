@@ -1,0 +1,11 @@
+[
+  {
+    "key_down": "backward", "time_since_key_down": 3,
+    "set_animation_id": "walk_forward",
+    "set_animation_frame": 0,
+    "acceleration_x_q8": 900,
+    "max_speed_x_q8": 600,
+    "factor_x": "invert",
+    "status": "break"
+  }
+]

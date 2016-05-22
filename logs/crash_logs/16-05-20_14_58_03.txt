@@ -1,0 +1,3 @@
+LocalJumpError: unexpected return
+	/Users/bue/.rvm/gems/ruby-2.1.5@game/gems/filewatcher-0.5.3/lib/filewatcher.rb:38:in `block in watch'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:96:in `<main>'

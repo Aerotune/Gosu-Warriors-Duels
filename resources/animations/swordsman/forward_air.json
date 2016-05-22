@@ -13,24 +13,26 @@
   ],
   "before_frame_events": [
     {
-      "after_frame": -12,
-      "on_ground": true,
-      "set_animation_id": "land",
-      "set_animation_frame": -6,
-      "status": "break"
-    },
-    {
+      "after_frame": 7, "before_frame": -17,
       "on_ground": true,
       "set_animation_id": "land",
       "set_animation_frame": -16,
       "status": "break"
     },
     {
-      "frame": 3,
-      "key_down": "block", "time_since_key_down": 4,
-      "velocity_factor_x_q8": -160
+      "on_ground": true,
+      "set_animation_id": "land",
+      "set_animation_frame": -6,
+      "status": "break"
     },
+    {
+      "frame": 4,
+      "key_down": "block", "time_since_key_down": 5,
+      "velocity_factor_x_q8": -256
+    },
+    { "no_friction": true, "before_frame": 7 },
     { "frame_event": "can_air_di", "after_frame": 6 },
+    { "frame_event": "can_fast_fall_single_tap" },
     { "frame": 5, "sfx": ["medium_swish/2"]},
     {
       "frame": "last",
@@ -136,7 +138,7 @@
     },
     {
       "sprite_sheet_id": "forward_air",
-      "sprite_index": 6,
+      "sprite_index": 5,
       "anchor_x": 22,
       "anchor_y": 40
     },
@@ -155,6 +157,24 @@
     {
       "sprite_sheet_id": "forward_air",
       "sprite_index": 6,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air",
+      "sprite_index": 6,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air",
+      "sprite_index": 6,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air",
+      "sprite_index": 7,
       "anchor_x": 22,
       "anchor_y": 40
     },

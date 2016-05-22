@@ -23,7 +23,7 @@ begin
   Gosu.enable_undocumented_retrofication
 
   SCALE = 3.0
-  DEVELOPMENT = false
+  DEVELOPMENT = true
 
   require_relative File.join 'app', 'constants'
   require_relative File.join 'app', 'paths'
@@ -51,7 +51,7 @@ begin
     def initialize
       $window = self
       #super 840, 480, false
-      super (280*SCALE).to_i, (160*SCALE).to_i, false
+      super (280*SCALE).to_i, (160*SCALE).to_i, false#, 1000.0/20.0
       require_relative File.join 'app', 'sprite_sheets'
       require_relative File.join 'app', 'animation_loader'
       require_relative File.join 'app', 'character_stats_loader'

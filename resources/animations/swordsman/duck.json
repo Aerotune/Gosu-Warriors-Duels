@@ -4,9 +4,8 @@
       "ignore_unit_collision": true
     },
     { "frame_event": "can_down_tilt" },
-    {
-      "frame_event": "can_low_slide"
-    },
+    { "frame_event": "can_low_slide" },
+    { "frame_event": "can_ground_jump" },
     {
       "key_up": "down",
       "set_animation_id": "duck_to_stand",

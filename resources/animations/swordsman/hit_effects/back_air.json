@@ -8,14 +8,14 @@
   "hit_keep_velocity_y_q8": 170,
   "hit_transfer_velocity_x_q8": 0,
   "hit_transfer_velocity_y_q8": 170,
-  "hit_acceleration_x_q8": 200,
-  "hit_acceleration_y_q8": -300,
-  "hit_max_speed_x_q8": 500,
+  "hit_acceleration_x_q8": 380,
+  "hit_acceleration_y_q8": -580,
+  "hit_max_speed_x_q8": 600,
   "hit_max_speed_y_q8": 2000,
-  "hit_freeze_frames": 6,
-  "hit_stun_frames": 19,
+  "hit_freeze_frames": 5,
+  "hit_stun_frames": 21,
   "hit_vfxs": ["slice", "hit", "big_splat"],
   "hit_sfxs": ["sword/hit_medium/1"],
-  "hit_shake": {"amount": 1.2, "duration": 8},
-  "damage": 35
+  "hit_shake": {"amount": 1.9, "duration": 4},
+  "damage": 50
 }

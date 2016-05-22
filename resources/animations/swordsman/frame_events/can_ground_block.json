@@ -1,16 +1,8 @@
 [
   {
-    "key_down": "block",
-    "new_hit": "block",
-    "latest_key_down": "up", "keys": ["up", "down", "forward", "backward"],
-    "buffer_animation_id": "block_high_to_up",
-    "buffer_animation_frame": 0,
-    "status": "break"
-  },
-  {
-    "key_down": "block",
-    "new_hit": "block",
-    "buffer_animation_id": "stand_to_block_high",
+    "key_down": "block", "time_since_key_down": 6,
+    "new_hit": "air_counter",
+    "buffer_animation_id": "air_counter",
     "buffer_animation_frame": 0,
     "status": "break"
   }

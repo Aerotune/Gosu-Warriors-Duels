@@ -6,7 +6,8 @@
   "ground_velocity_filter": 16,
   "ground_bounce_factor_q8": -200,
   "ground_bounce_min_speed_q8": 900,
-  "max_fall_speed": 800,
+  "max_fall_speed": 750,
+  "fast_fall_speed": 1207,
   "velocity_x_filter": 10,
   "velocity_y_filter": 10,  
   "cooldown_reset_on_ground": {

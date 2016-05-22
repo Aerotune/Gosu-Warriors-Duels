@@ -1,49 +1,68 @@
 [
   {
-    "key_down": "block", 
-    "time_since_key_down": 6,
-    "new_hit": "air_counter",
-    "set_animation_id": "air_counter",
-    "set_animation_frame": 0,
+    "key_up": ["up", "down", "forward", "backward"],
+    "key_down": "attack", "time_since_key_down": 6,
+    "buffer": {
+      "fast_fall": false,
+      "new_hit": "neutral_air",
+      "set_animation_id": "neutral_air",
+      "set_animation_frame": 4
+    },
     "status": "break"
   },
   {
     "key_down": "attack", "time_since_key_down": 6,
     "latest_key_down": "up", "keys": ["up", "down"],
-    "new_hit": "up_air",
-    "buffer_animation_id": "up_air",
-    "buffer_animation_frame": 0,
+    "buffer": {
+      "fast_fall": false,
+      "new_hit": "up_air",
+      "set_animation_id": "up_air",
+      "set_animation_frame": 0
+    },
     "status": "break"
   },
   {
     "key_down": "attack", "time_since_key_down": 6,
     "latest_key_down": "forward", "keys": ["forward", "backward"],
-    "new_hit": "forward_air",
-    "buffer_animation_id": "forward_air",
-    "buffer_animation_frame": 0,
+    "buffer": {
+      "fast_fall": false,
+      "new_hit": "forward_air",
+      "set_animation_id": "forward_air",
+      "set_animation_frame": 0
+    },
     "status": "break"
   },
   {
     "key_down": "attack", "time_since_key_down": 6,
     "latest_key_down": "backward", "keys": ["forward", "backward"],
-    "new_hit": "back_air",
-    "buffer_animation_id": "back_air",
-    "buffer_animation_frame": 0,
+    "buffer": {
+      "fast_fall": false,
+      "new_hit": "back_air",
+      "set_animation_id": "back_air",
+      "set_animation_frame": 0
+    },
     "status": "break"
   },
   {
-    "key_down": "attack",
+    "key_down": "special",
+    "latest_key_down": "up", "keys": ["up", "down", "forward", "backward"],
     "time_since_key_down": 6,
-    "new_hit": "neutral_air",
-    "buffer_animation_id": "neutral_air",
-    "buffer_animation_frame": 0,
+    "buffer": {
+      "fast_fall": false,
+      "new_hit": "air_up_special",
+      "buffer_animation_id": "air_up_special",
+      "buffer_animation_frame": 0
+    },
     "status": "break"
   },
   {
     "key_down": "special", "time_since_key_down": 6,
     "latest_key_down": "down", "keys": ["up", "down", "forward", "backward"],
-    "buffer_animation_id": "air_down_special",
-    "buffer_animation_frame": 0,
+    "buffer": {
+      "fast_fall": false,
+      "set_animation_id": "air_down_special",
+      "set_animation_frame": 0
+    },
     "status": "break"
   },
   {
@@ -69,9 +88,24 @@
   },
   {
     "key_down": "special",
+    "key_up": ["forward", "backward", "up", "down"],
     "time_since_key_down": 6,
-    "buffer_animation_id": "air_neutral_special",
-    "buffer_animation_frame": 0,
+    "buffer": {
+      "fast_fall": false,
+      "set_animation_id": "air_neutral_special",
+      "set_animation_frame": 0
+    },
+    "status": "break"
+  },
+  {
+    "key_down": "block", 
+    "time_since_key_down": 6,
+    "buffer": {
+      "fast_fall": false,
+      "new_hit": "air_counter",
+      "set_animation_id": "air_counter",
+      "set_animation_frame": 0
+    },
     "status": "break"
   }
 ]

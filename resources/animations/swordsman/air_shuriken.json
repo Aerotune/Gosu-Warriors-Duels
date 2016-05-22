@@ -19,8 +19,8 @@
       "set_animation_frame": 0,
       "set_animation_id": "shuriken_reflected",
       "new_hit":          "shuriken_reflected",
-      "velocity_factor_x_q8": -300,
-      "velocity_factor_y_q8": -256,
+      "velocity_factor_x_q8": -360,
+      "velocity_factor_y_q8": -90,
       "factor_x": "invert",
       "team": "swap",
       "status": "break"
@@ -37,8 +37,10 @@
     },
     {
       "on_ground": true,
-      "draw_on_canvas": "shuriken",
-      "despawn": true,
+      "buffer": {
+        "draw_on_canvas": "shuriken",
+        "despawn": true
+      },
       "status": "break"
     },
     {
@@ -46,13 +48,13 @@
       "sfx": "shuriken"
     },
     {
-      "velocity_x_q8": 1150
+      "velocity_x_q8": 1000
     },
     {
       "frame": 1,
       "velocity_y_q8": 760
     },
-    { "acceleration_y_q8": -60, "max_speed_y_q8": -150 },
+    { "acceleration_y_q8": -60, "max_speed_y_q8": -175 },
     {
       "frame": "last",
       "despawn": true,

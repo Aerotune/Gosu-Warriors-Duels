@@ -8,6 +8,7 @@
       "frame": 34,
       "sfx": "step/2"
     },
+    { "frame_event": "can_dash_attack", "latest_key_down": "forward", "keys": ["up", "down", "forward", "backward"] },
     { "frame_event": "can_standing_moves" },
     { "frame_event": "can_ground_block" },
     {
@@ -39,13 +40,13 @@
     {
       "facing": "opponent",
       "opponent_distance_more_than": 10,
-      "acceleration_x_q8": 73,
-      "max_speed_x_q8": 950,
+      "acceleration_x_q8": 80,
+      "max_speed_x_q8": 850,
       "status": "break"
     },
     { 
-      "acceleration_x_q8": 69,
-      "max_speed_x_q8": 700
+      "acceleration_x_q8": 73,
+      "max_speed_x_q8": 650
     }
   ],
   "frames": [

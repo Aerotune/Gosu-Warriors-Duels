@@ -1,0 +1,22 @@
+{
+  "priority": 1,
+  "can_clash": true,
+  "cause_clash": true,
+  "reflects_projectiles": false,
+  "hit_keep_velocity_x_q8": 32,
+  "hit_keep_velocity_y_q8": 32,
+  "hit_transfer_velocity_x_q8": 256,
+  "hit_transfer_velocity_y_q8": 0,
+  "hit_acceleration_x_q8": 0,
+  "hit_acceleration_y_q8": 600,
+  "hit_max_speed_x_q8": 2000,
+  "hit_max_speed_y_q8": 2000,
+  "clash_freeze_frames": 4,
+  "hit_freeze_frames": 5,
+  "hit_stun_frames": 30,
+  "hit_vfxs": ["big_splat"],
+  "hit_sfxs": ["sword/hit_light/1"],
+  "volume": 0.5,
+  "hit_shake": {"amount": 1.0, "duration": 3},
+  "damage": 20
+}

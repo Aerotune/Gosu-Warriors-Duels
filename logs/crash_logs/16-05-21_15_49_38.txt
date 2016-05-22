@@ -1,0 +1,11 @@
+RuntimeError: Unexpected data type!
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/frame_event_systems/any_key_down.rb:18:in `block in <top (required)>'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:979:in `call'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:979:in `block in process_frame_event'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:975:in `each'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:975:in `process_frame_event'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:275:in `block in update'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:274:in `each'
+	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:274:in `update'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:80:in `update'
+	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:96:in `<main>'

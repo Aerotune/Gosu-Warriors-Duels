@@ -8,7 +8,7 @@
   "hit_keep_velocity_y_q8": 64,
   "hit_transfer_velocity_x_q8": 128,
   "hit_transfer_velocity_y_q8": 128,
-  "hit_acceleration_x_q8": -200,
+  "hit_acceleration_x_q8": -370,
   "hit_acceleration_y_q8": -1300,
   "hit_max_speed_x_q8": 950,
   "hit_max_speed_y_q8": 800,
@@ -17,5 +17,5 @@
   "hit_vfxs": ["hit", "slice", "big_splat"],
   "hit_sfxs": ["sword/hit_heavy/1"],
   "hit_shake": {"amount": 1.5, "duration": 4},
-  "damage": 40
+  "damage": 50
 }

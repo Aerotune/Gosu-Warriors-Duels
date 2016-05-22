@@ -1,5 +1,6 @@
 {
   "before_frame_events": [
+    { "frame_event": "can_ground_jump" },
     {
       "frame": "last",
       "set_animation_id": "stand",
@@ -12,6 +13,7 @@
       "set_animation_frame": "invert",
       "status": "break"
     },
+    { "frame_event": "can_run_backward" },
     {
       "ground_velocity_filter": 30,
       "acceleration_x_q8": -90,

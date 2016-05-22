@@ -24,7 +24,7 @@
     "hit_shake": {"amount": 0.8, "duration": 2},
     "hit_vfxs": ["splat", "slice"],
     "hit_sfxs": ["sword/hit_medium/1"],
-    "damage_estimate": 20,
-    "damage": 20
+    "damage_estimate": 25,
+    "damage": 25
   }
 }

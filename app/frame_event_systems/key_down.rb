@@ -9,7 +9,7 @@ lambda do |game, animation, store, frame_event|
     end
     
   when Array
-    frame_event["keys_down"].each do |key_down|
+    frame_event["key_down"].each do |key_down|
       if frame_event["time_since_key_down"]
         return :skip unless store['input'].key_down_time(key_down) >= game.time - frame_event["time_since_key_down"]
       else

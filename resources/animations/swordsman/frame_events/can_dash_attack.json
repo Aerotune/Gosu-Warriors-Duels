@@ -1,0 +1,12 @@
+[
+  {
+    "on_ground": true,
+    "key_down": "attack", "time_since_key_down": 6,
+    "buffer": {
+      "new_hit": "run_attack",
+      "set_animation_id": "run_attack",
+      "set_animation_frame": 0
+    },
+    "status": "break"
+  }
+]
