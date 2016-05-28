@@ -1,21 +1,17 @@
 {
   "before_frame_events": [
     {
-      "ignore_unit_collision": true
+      "ignore_unit_collision": 6
     },
+    { "frame_event": "can_down_special" },
     { "frame_event": "can_down_tilt" },
     { "frame_event": "can_low_slide" },
     { "frame_event": "can_ground_jump" },
+    { "frame_event": "can_parry" },
     {
       "key_up": "down",
       "set_animation_id": "duck_to_stand",
       "set_animation_frame": 0,
-      "status": "break"
-    },
-    {
-      "key_down": "block",
-      "buffer_animation_id": "block_low",
-      "buffer_animation_frame": 0,
       "status": "break"
     },
     {

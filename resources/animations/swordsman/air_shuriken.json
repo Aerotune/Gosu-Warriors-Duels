@@ -565,6 +565,96 @@
       "sprite_index": 7,
       "anchor_x": 8,
       "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 3,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 3,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 3,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 4,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 4,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 4,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 5,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 5,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 5,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "air_shuriken",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
     }
   ]
 }

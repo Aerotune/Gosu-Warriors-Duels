@@ -1,0 +1,25 @@
+[
+  {
+    "on_ground": false,
+    "key_down": "block", 
+    "time_since_key_down": 6,
+    "buffer": {
+      "fast_fall": false,
+      "set_animation_id": "air_dodge",
+      "set_animation_frame": 0
+    },
+    "status": "break"
+  },
+  {
+    "on_ground": true,
+    "key_down": "block", 
+    "time_since_key_down": 6,
+    "buffer": {
+      "fast_fall": false,
+      "new_hit": "air_counter",
+      "set_animation_id": "air_counter",
+      "set_animation_frame": 0
+    },
+    "status": "break"
+  }
+]

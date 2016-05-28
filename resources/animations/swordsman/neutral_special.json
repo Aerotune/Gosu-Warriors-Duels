@@ -4,23 +4,14 @@
       "frame": 0,
       "sfx": ["metal_draw/1", "metal_draw/2", "metal_draw/3"]
     },
-    {
-      "frame": 3,
-      "key_down": "block",
-      "velocity_factor_x_q8": -256
-    },
+    { "frame_event": "can_wave_bounce_256" },
     {
       "frame": 3,
       "key_down": "backward",
-      "velocity_factor_x_q8": -256
-    },
-    {
-      "frame": 3,
-      "key_down": "backward", "time_since_key_down": 4,
       "factor_x": "invert"
     },
     {
-      "frame": 8,
+      "frame": 10,
       "new_hit": "shuriken",
       "spawn_projectile": "shuriken"
     },
@@ -32,6 +23,18 @@
     }
   ],
   "frames": [
+    {
+      "sprite_sheet_id": "neutral_special",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "neutral_special",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
     {
       "sprite_sheet_id": "neutral_special",
       "sprite_index": 0,

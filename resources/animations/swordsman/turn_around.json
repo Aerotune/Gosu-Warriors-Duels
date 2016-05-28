@@ -1,5 +1,6 @@
 {
   "before_frame_events": [
+    { "frame_event": "can_ground_side_special" },
     { "frame_event": "can_ground_jump" },
     {
       "frame": "last",

@@ -1,16 +1,28 @@
 {
   "disable_hit_cross_up": true,
   "hit_hurtable": true,
-  "hit_id": "neutral_air",
+  "hit_id": "neutral_air_dive_kick",
   "default_hit_effect": "neutral_air_dive_kick_weak",
+  "on_set_events": [
+    { "fast_fall": false }
+  ],
   "on_hit_frame_events": [
     {
       "after_frame": 9,
-      "land_frame_index": -15
+      "land_frame_index": null,
+      "velocity_y_q8": -350,
+      "velocity_x_q8": -650,
+      "fast_fall": false,
+      "buffer": {
+        "set_animation_frame": -4,
+        "set_animation_id": "neutral_air"
+      }
     },
     {
       "before_frame": 10,
-      "land_frame_index": -19
+      "acceleration_y_q8": -385,
+      "max_speed_y_q8": 250,
+      "land_frame_index": -10
     }
   ],
   "clash_frame_events": [
@@ -26,23 +38,14 @@
     }
   ],
   "before_frame_events": [
+    { "ground_velocity_filter": 60 },
     {
-      "on_ground": true,
-      "after_frame": -6,
-      "velocity_x_q8": 600,
-      "buffer": {
-        "set_animation_id": "land",
-        "set_animation_frame": -24
-      },
-      "status": "break"
-    },
-    {
-      "frame": [6, 8, 10],
-      "new_hit": "neutral_air"
-    },
-    {
-      "frame": [4],
+      "frame": 1,
       "vfx": "air_swirl_diagonal"
+    },
+    {
+      "frame": [6,8,10],
+      "new_hit": "neutral_air_dive_kick"
     },
     {
       "frame": 0,
@@ -50,14 +53,24 @@
     },
     {
       "before_frame": 3,
-      "velocity_y_q8": -100,
-      "velocity_x_q8": -100
+      "velocity_factor_y_q8": 180,
+      "velocity_factor_x_q8": 180
     },
     {
       "after_frame": 2,
-      "fast_fall": true,
-      "acceleration_x_q8": 250,
+      "acceleration_y_q8": 170,
+      "max_speed_y_q8": 1000,
+      "acceleration_x_q8": 170,
       "max_speed_x_q8": 800
+    },
+    {
+      "on_ground": true,
+      "after_frame": -6,
+      "buffer": {
+        "set_animation_id": "land",
+        "set_animation_frame": -20
+      },
+      "status": "break"
     },
     {
       "frame": "last",
@@ -79,7 +92,7 @@
     {
       "latest_key_down": "forward",
       "keys": ["forward", "backward"],
-      "acceleration_x_q8": 80,
+      "acceleration_x_q8": 70,
       "max_speed_x_q8": 1000
     },
     {
@@ -173,6 +186,18 @@
     {
       "sprite_sheet_id": "neutral_air_dive_kick",
       "sprite_index": 5,
+      "anchor_x": 32,
+      "anchor_y": 64
+    },
+    {
+      "sprite_sheet_id": "neutral_air_dive_kick",
+      "sprite_index": 5,
+      "anchor_x": 32,
+      "anchor_y": 64
+    },
+    {
+      "sprite_sheet_id": "neutral_air_dive_kick",
+      "sprite_index": 6,
       "anchor_x": 32,
       "anchor_y": 64
     },

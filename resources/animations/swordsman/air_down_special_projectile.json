@@ -13,7 +13,7 @@
     {
       "frame": -3,
       "parent_frame_events": [{
-        "dodge": true,
+        "dodge": 1,
         "super_armor": true,
         "buffer_animation_id": "air_down_special_teleport",
         "buffer_animation_frame": 0

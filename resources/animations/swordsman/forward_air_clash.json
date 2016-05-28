@@ -1,6 +1,6 @@
 {
   "before_frame_events": [
-    { "ignore_unit_collision": true },
+    { "ignore_unit_collision": 1 },
     {
       "frame": 0,
       "acceleration_x_q8": -150,
@@ -13,29 +13,25 @@
       "status": "break"
     },
     {
-      "frame": 19,
+      "frame": 21,
       "latest_key_down": "forward", "keys": ["forward", "backward"],
       "buffer_animation_id": "forward_air_clash_kip_up_forward",
       "buffer_animation_frame": 0,
       "status": "break"
     },
     {
-      "after_frame": 19,
+      "after_frame": 21,
       "ground_friction": 0,
       "ground_velocity_filter": 0
     },
     {
-      "after_frame": 19, "before_frame": 23,
-      "acceleration_x_q8": -120, "max_speed_x_q8": 450
+      "after_frame": 21, "before_frame": 25,
+      "acceleration_x_q8": -110, "max_speed_x_q8": 430
     },
     {
       "on_ground": false,
       "frame_event": "can_air_hurt_di",
       "acceleration_x_q8": -4, "max_speed_x_q8": 200
-    },
-    {
-      "after_frame": 15, "before_frame": 27,
-      "//dodge": true
     },
     {
       "on_ground": false,
@@ -161,6 +157,30 @@
     {
       "sprite_sheet_id": "forward_air_clash",
       "sprite_index": 8,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash",
+      "sprite_index": 8,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash",
+      "sprite_index": 8,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash",
+      "sprite_index": 9,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash",
+      "sprite_index": 9,
       "anchor_x": 22,
       "anchor_y": 40
     },

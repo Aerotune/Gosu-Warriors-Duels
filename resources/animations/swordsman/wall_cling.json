@@ -40,8 +40,8 @@
     },
     {
       "except_frame": [1,2,3],
-      "time_since_key_down": 6,
-      "key_down": "jump",
+      "time_since_any_key_down": 6,
+      "any_key_down": ["jump", "forward"],
       "set_animation_id": "jump_up_forward",
       "set_animation_frame": 8,
       "set_cooldown": "air_jump",
@@ -51,8 +51,7 @@
       "status": "break"
     },
     {
-      "after_frame": 12,
-      "any_key_down": ["down", "forward"], "time_since_key_down": 6,
+      "key_down": "down",
       "buffer": {
         "set_animation_id": "jump_up_forward",
         "set_animation_frame": 10,

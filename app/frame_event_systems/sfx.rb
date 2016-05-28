@@ -7,7 +7,8 @@ lambda do |game, animation, store, frame_event|
   if sfx
     volume = frame_event["volume"] || 1.0
     volume *= game.volume
-    speed = 0.94+rand*0.12
+    speed = frame_event["speed"] || 1.0
+    speed = speed*0.96+rand*speed*0.08
     sfx.play volume, speed
   end
   return :ok

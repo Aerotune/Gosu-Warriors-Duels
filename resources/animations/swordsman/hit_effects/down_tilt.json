@@ -1,19 +1,20 @@
 {
   "can_clash": true,
+  "can_jab_lock": true,
   "cause_clash": true,
   "reflects_projectiles": false,
   "priority": 2,
-  "hit_keep_velocity_x_q8": 190,
+  "hit_keep_velocity_x_q8": 200,
   "hit_keep_velocity_y_q8": 0,
-  "hit_acceleration_x_q8": 200,
+  "hit_acceleration_x_q8": 170,
   "hit_acceleration_y_q8": 0,
   "hit_max_speed_x_q8": 280,
   "hit_max_speed_y_q8": 740,
   "hit_freeze_frames": 3,
   "clash_freeze_frames": 3,
-  "hit_stun_frames": 25,
-  "hit_vfxs": ["splat", "slice"],
+  "hit_stun_frames": 19,
+  "hit_vfxs": ["splat", "blob"],
   "hit_sfxs": ["sword/hit_medium/1"],
   "hit_shake": {"amount": 1.0, "duration": 2},
-  "damage": 20
+  "damage": 15
 }

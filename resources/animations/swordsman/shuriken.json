@@ -47,10 +47,10 @@
       "frame": 2,
       "sfx": "shuriken"
     },
-    { "acceleration_y_q8": -34, "max_speed_y_q8": 1000 },
+    { "acceleration_y_q8": -36, "max_speed_y_q8": 1000 },
     {
       "except_frame": [0,1],
-      "velocity_x_q8": 1200
+      "velocity_x_q8": 1150
     },
     {
       "frame": "last",

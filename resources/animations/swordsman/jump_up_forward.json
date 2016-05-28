@@ -8,6 +8,7 @@
     },
     { "frame_event": "can_air_di" },
     { "frame_event": "can_aerial_attack" },
+    { "frame_event": "can_parry" },
     { "frame_event": "can_fast_fall" },
     { "frame_event": "can_wall_cling", "except_frame": [1,2,3] },
     {

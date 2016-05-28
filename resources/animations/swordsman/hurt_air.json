@@ -1,11 +1,17 @@
 {
   "before_frame_events": [
+    { "frame_event": "can_ground_tech", "on_ground_bounce": true },
     {
       "on_ground": false,
       "frame": "last",
       "buffer_animation_id": "jump_up_forward",
       "buffer_animation_frame": 8,
       "status": "break"
+    },
+    {
+      "on_ground_bounce": true,
+      "on_ground": true,
+      "velocity_factor_y_q8": "ground_bounce"
     },
     {
       "on_ground": true,

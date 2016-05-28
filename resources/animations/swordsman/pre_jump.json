@@ -44,15 +44,6 @@
       "set_animation_id": "jump_up_forward",
       "set_animation_frame": 0,
       "status": "break"
-    },
-    {
-      "key_down": "block", "time_since_key_down": 6,
-      "buffer": {
-        "new_hit": "air_counter",
-        "set_animation_id": "air_counter",
-        "set_animation_frame": 0
-      },
-      "status": "break"
     }
   ],
   "frames": [

@@ -12,9 +12,9 @@
   "hit_acceleration_y_q8": -1400,
   "hit_max_speed_x_q8": 3000,
   "hit_max_speed_y_q8": 3000,
-  "hit_freeze_frames": 8,
+  "hit_freeze_frames": 6,
   "hit_stun_frames": 27,
-  "hit_vfxs": ["hit", "big_splat"],
+  "hit_vfxs": ["hit", "punch", "big_splat"],
   "hit_sfxs": ["sword/hit_heavy/1"],
   "hit_shake": {"amount": 1.6, "duration": 3},
   "damage": 45

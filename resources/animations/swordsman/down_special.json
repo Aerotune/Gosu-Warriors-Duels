@@ -1,0 +1,142 @@
+{
+  "before_frame_events": [
+    {
+      "frame": 0,
+      "sfx": ["metal_draw/1", "metal_draw/2", "metal_draw/3"],
+      "volume": 0.8, "speed": 1.07
+    },
+    {
+      "frame": 10,
+      "new_hit": "shuriken_low",
+      "spawn_projectile": "shuriken_low"
+    },
+    {
+      "frame": "last",
+      "set_animation_id": "duck",
+      "set_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 0,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 0,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 1,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 1,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 2,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 2,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 2,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 3,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 3,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 3,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 4,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 5,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 5,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 5,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 6,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 6,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 6,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 7,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 7,
+      "anchor_x": 32,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "down_special",
+      "sprite_index": 7,
+      "anchor_x": 32,
+      "anchor_y": 32
+    }
+  ]
+}

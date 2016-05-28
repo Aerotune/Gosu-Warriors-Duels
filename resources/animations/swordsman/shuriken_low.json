@@ -1,0 +1,567 @@
+{
+  "disable_hit_cross_up": true,
+  "hit_id": "shuriken_low",
+  "default_hit_effect": "shuriken_low",
+  "on_hit_frame_events": [
+    {
+      "despawn": true,
+      "status": "break"
+    }
+  ],
+  "clash_frame_events": [
+    {
+      "despawn": true,
+      "status": "break"
+    }
+  ],
+  "reflected_frame_events": [
+    {
+      "set_animation_frame": 0,
+      "set_animation_id": "shuriken_reflected",
+      "new_hit":          "shuriken_reflected",
+      "velocity_factor_x_q8": -300,
+      "velocity_factor_y_q8": -128,
+      "factor_x": "invert",
+      "team": "swap",
+      "status": "break"
+    }
+  ],
+  "before_frame_events": [
+    {
+      "on_wall": true,
+      "buffer": {
+        "draw_on_canvas": "shuriken",
+        "despawn": true
+      },
+      "status": "break"
+    },
+    {
+      "on_ground": true,
+      "buffer": {
+        "draw_on_canvas": "shuriken",
+        "despawn": true
+      },
+      "status": "break"
+    },
+    {
+      "frame": 2,
+      "sfx": "shuriken"
+    },
+    {
+      "except_frame": [0,1],
+      "velocity_y_q8": 65,
+      "velocity_x_q8": 1100
+    },
+    {
+      "frame": "last",
+      "despawn": true,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 0,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 0,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 1,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 1,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 2,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 3,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 4,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 5,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 6,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 7,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 8,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 9,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    },
+    {
+      "sprite_sheet_id": "shuriken_reflected",
+      "sprite_index": 10,
+      "anchor_x": 8,
+      "anchor_y": 8
+    }
+  ]
+}

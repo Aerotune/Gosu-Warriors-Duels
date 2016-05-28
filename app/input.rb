@@ -11,8 +11,15 @@ class Input
     key = @key_layout[id]
     if key
       @prev_key_down_time = @key_down_time[key]
+      if key == "block" && (time - @key_down_time["tech"]) >= 40
+        @key_down_time["tech"] = time
+      end
       @key_down_time[key] = time
     end
+  end
+  
+  def reset_tech
+    @key_down_time["tech"] = -256
   end
   
   def button_up time, id

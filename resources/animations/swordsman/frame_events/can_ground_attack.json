@@ -1,19 +1,9 @@
 [
-  { "frame_event": "can_low_slide" },
   { "frame_event": "can_up_tilt" },
   { "frame_event": "can_forward_tilt" },
   { "frame_event": "can_up_special" },
-  {
-    "key_down": "special", "time_since_key_down": 6,
-    "latest_key_down": "forward", "keys": ["forward", "backward", "up", "down"],
-    "can_consume": "dash",
-    "consume": "dash",
-    "cooldown": 3,
-    "new_hit": "dash_attack",
-    "buffer_animation_id": "dash_attack",
-    "buffer_animation_frame": 0,
-    "status": "break"
-  },
+  { "frame_event": "can_ground_side_special" },
   { "frame_event": "can_ground_item_throw" },
-  { "frame_event": "can_neutral_attack" }
+  { "frame_event": "can_neutral_attack" },
+  { "frame_event": "can_low_slide" }
 ]

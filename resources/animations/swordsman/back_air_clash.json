@@ -5,9 +5,9 @@
     }
   ],
   "before_frame_events": [
-    { "frame_event": "can_air_di" },
+    { "frame_event": "can_air_hurt_di" },
     {
-      "after_frame": 7,
+      "after_frame": 4,
       "on_ground": true,
       "buffer_animation_id": "land",
       "buffer_animation_frame": -15

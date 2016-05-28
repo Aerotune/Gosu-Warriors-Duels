@@ -38,6 +38,8 @@ module Factory::Projectile
         'lifetime' => 17,
         'velocity_x_q8' => 0,
         'velocity_y_q8' => 0,
+        'no_friction_x' => 0,
+        'no_friction_y' => 0,
         'color_scheme' => character['color_scheme']
       }
       

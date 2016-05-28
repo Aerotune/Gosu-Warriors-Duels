@@ -1,5 +1,14 @@
 {
   "before_frame_events": [
+    { "frame_event": "can_ground_tech", "on_ground_bounce": true },
+    {
+      "on_ground_bounce": true,
+      "on_ground": true,
+      "hit_stun_above": 1,
+      "velocity_factor_y_q8": "ground_bounce",
+      "set_animation_frame": "hit_stun",
+      "status": "break"
+    },
     {
       "on_ground": true,
       "frame": "last",
@@ -18,9 +27,6 @@
       "on_ground": false,
       "buffer_animation_id": "hurt_air",
       "status": "break"
-    },
-    {
-      "//ignore_unit_collision": true
     },
     {
       "key_down": "forward",

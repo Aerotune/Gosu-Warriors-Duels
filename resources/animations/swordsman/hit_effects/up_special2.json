@@ -17,5 +17,5 @@
   "hit_vfxs": ["hit", "splat"],
   "hit_sfxs": ["perfect_hit"], "volume": 0.5, "speed": 1.0,
   "hit_shake": {"amount": 1.5, "duration": 4},
-  "damage": 20
+  "damage": 30
 }

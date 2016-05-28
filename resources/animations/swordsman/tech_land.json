@@ -1,0 +1,114 @@
+{
+  "on_set_events": [
+    
+  ],
+  "before_frame_events": [
+    {
+      "before_frame": 9, "dodge": 1, "ignore_unit_collision": 1
+    },
+    {
+      "frame": "last",
+      "buffer_animation_id": "stand",
+      "buffer_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 0,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 0,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 0,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 0,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 1,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 1,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 1,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 1,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 2,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 2,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 3,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 3,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 4,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 4,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 5,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "tech_land",
+      "sprite_index": 5,
+      "anchor_x": 22,
+      "anchor_y": 40
+    }
+  ]
+}

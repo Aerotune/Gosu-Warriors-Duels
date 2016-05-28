@@ -1,8 +1,0 @@
-SyntaxError: /Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1259: syntax error, unexpected '(', expecting keyword_end
-      rate = 60.0(effect[:fps] || 30.0)
-                  ^
-/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:1259: syntax error, unexpected ')', expecting keyword_end
-	/Users/bue/Documents/Git/gosu_warriors_duels/app/resource_file_watcher.rb:11:in `load'
-	/Users/bue/Documents/Git/gosu_warriors_duels/app/resource_file_watcher.rb:11:in `block (2 levels) in watch!'
-	/Users/bue/.rvm/gems/ruby-2.1.5@game/gems/filewatcher-0.5.3/lib/filewatcher.rb:60:in `watch'
-	/Users/bue/Documents/Git/gosu_warriors_duels/app/resource_file_watcher.rb:7:in `block in watch!'

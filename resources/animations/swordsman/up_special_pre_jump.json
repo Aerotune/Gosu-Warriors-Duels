@@ -5,7 +5,7 @@
       "frame": "last",
       "buffer_animation_id": "up_special_jump",
       "buffer_animation_frame": 0,
-      "velocity_y_q8": -1900,
+      "velocity_y_q8": -1800,
       "status": "break"
     },
     {

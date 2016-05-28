@@ -3,8 +3,7 @@
   "default_hit_effect": "neutral_attack",
   "before_frame_events": [
     {
-      "after_frame": 5, "before_frame": 15,
-      "ignore_unit_collision": true
+      "ignore_unit_collision": 10
     },
     {
       "frame": "last",
@@ -19,7 +18,7 @@
       "draw_on_canvas": "stomp_burn_mark"
     },
     {
-      "after_frame": 4, "before_frame": 10,
+      "after_frame": 5, "before_frame": 13,
       "velocity_x_q8": 0,
       "super_armor": true
     }

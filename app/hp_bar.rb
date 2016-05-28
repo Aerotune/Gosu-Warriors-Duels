@@ -1,11 +1,12 @@
 class HPBar
+  attr_reader :height
   attr_accessor :max_hp
   
   def initialize
-    @x = 65 / 3 * SCALE
+    @x = 12 / 3 * SCALE
     @y = 450 / 3 * SCALE
     @z = 0
-    @width = 344 / 3 * SCALE
+    @width = 397 / 3 * SCALE
     @height = 20 / 3 * SCALE
     @background_color = 0xFF222222
     @hp = 800

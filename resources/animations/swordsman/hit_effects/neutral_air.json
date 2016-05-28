@@ -12,11 +12,11 @@
   "hit_acceleration_y_q8": -700,
   "hit_max_speed_x_q8": 2000,
   "hit_max_speed_y_q8": 2000,
-  "hit_freeze_frames": 4,
+  "hit_freeze_frames": 5,
   "hit_stun_frames": 16,
   "hit_vfxs": ["hit"],
   "hit_sfxs": ["hit_medium/1"],
   "volume": 0.75, "speed": 1.25,
-  "hit_shake": {"amount": 1.9, "duration": 7},
+  "hit_shake": {"amount": 2.2, "duration": 5},
   "damage": 35
 }

@@ -7,7 +7,7 @@
     },
     {
       "before_frame": 5,
-      "dodge": true,
+      "dodge": 1,
       "super_armor": true
     },
     {

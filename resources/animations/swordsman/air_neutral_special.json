@@ -2,25 +2,17 @@
   "before_frame_events": [
     {
       "frame": 0,
-      "sfx": ["metal_draw/1", "metal_draw/2", "metal_draw/3"]
+      "sfx": ["metal_draw/1", "metal_draw/2", "metal_draw/3"],
+      "speed": 0.97
     },
-    {
-      "frame": 3,
-      "key_down": "block",
-      "velocity_factor_x_q8": -256
-    },
+    { "frame_event": "can_wave_bounce_200" },
     {
       "frame": 3,
       "key_down": "backward",
-      "velocity_factor_x_q8": -256
-    },
-    {
-      "frame": 3,
-      "key_down": "backward", "time_since_key_down": 9,
       "factor_x": "invert"
     },
     {
-      "frame": 8,
+      "frame": 10,
       "new_hit": "shuriken",
       "spawn_projectile": "air_shuriken"
     },
@@ -31,7 +23,10 @@
       "status": "break"
     },
     {
-      "frame_event": "can_air_di"
+      "no_friction_x": 1, "before_frame": -8
+    },
+    {
+      "frame_event": "can_air_di", "after_frame": 6
     },
     { "frame_event": "can_fast_fall_single_tap" },
     {
@@ -42,6 +37,18 @@
     }
   ],
   "frames": [
+    {
+      "sprite_sheet_id": "air_neutral_special",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "air_neutral_special",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
     {
       "sprite_sheet_id": "air_neutral_special",
       "sprite_index": 0,

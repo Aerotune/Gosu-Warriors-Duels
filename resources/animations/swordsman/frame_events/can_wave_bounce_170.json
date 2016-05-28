@@ -1,0 +1,11 @@
+[
+  {
+    "frame": 4,
+    "key_down": "block", "time_since_key_down": 5,
+    "velocity_factor_x_q8": -170,
+    "speed_x_q8_above": 65,
+    "reset": "tech",
+    "vfx": "wave_bounce",
+    "sfx": "wave_bounce", "volume": 0.65
+  }
+]

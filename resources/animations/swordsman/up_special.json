@@ -3,14 +3,12 @@
   "hit_hurtable": true,
   "before_frame_events": [
     {
-      "ignore_unit_collision": true
-    },
-    {
       "frame": 0,
       "new_hit": "up_special"
     },
     {
-      "velocity_x_q8": 0
+      "velocity_x_q8": 0,
+      "ignore_unit_collision": 1
     },
     {
       "frame": 2,

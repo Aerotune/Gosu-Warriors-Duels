@@ -30,7 +30,8 @@
       "set_animation_id": "stand",
       "set_animation_frame": 0,
       "status": "break"
-    }
+    },
+    { "frame_event": "can_parry" }
   ],
   "frames": [
     {

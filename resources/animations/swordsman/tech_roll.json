@@ -1,0 +1,162 @@
+{
+  "on_set_events": [
+    {
+      "vfx": "air_swirl_diagonal"
+    }
+  ],
+  "before_frame_events": [
+    {
+      "ignore_unit_collision":  1
+    },
+    {
+      "after_frame": 1, "before_frame": 10,
+      "velocity_x_q8": 650,
+      "dodge": 1
+    },
+    {
+      "frame": "last",
+      "set_animation_id": "stand",
+      "set_animation_frame": 0
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 6,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 6,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 6,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 7,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "tech_roll",
+      "sprite_index": 7,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

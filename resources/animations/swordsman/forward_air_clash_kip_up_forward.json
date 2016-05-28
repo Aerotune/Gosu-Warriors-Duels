@@ -1,6 +1,6 @@
 {
   "before_frame_events": [
-    { "ignore_unit_collision": true },
+    { "ignore_unit_collision": 1 },
     {
       "before_frame": 6, "//dodge": true
     },
@@ -35,6 +35,12 @@
     },
     {
       "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 0,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
       "sprite_index": 1,
       "anchor_x": 22,
       "anchor_y": 40
@@ -42,6 +48,24 @@
     {
       "sprite_sheet_id": "forward_air_clash_kip_up_forward",
       "sprite_index": 1,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 1,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 1,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 2,
       "anchor_x": 22,
       "anchor_y": 40
     },
@@ -71,6 +95,12 @@
     },
     {
       "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 3,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
       "sprite_index": 4,
       "anchor_x": 22,
       "anchor_y": 40
@@ -78,6 +108,18 @@
     {
       "sprite_sheet_id": "forward_air_clash_kip_up_forward",
       "sprite_index": 4,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 4,
+      "anchor_x": 22,
+      "anchor_y": 40
+    },
+    {
+      "sprite_sheet_id": "forward_air_clash_kip_up_forward",
+      "sprite_index": 5,
       "anchor_x": 22,
       "anchor_y": 40
     },

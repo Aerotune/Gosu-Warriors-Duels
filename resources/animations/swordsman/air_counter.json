@@ -3,10 +3,21 @@
   "clash_frame_events": [
     {
       "buffer": {
-        "set_animation_frame": -16,
-        "set_animation_id": "jump_up_forward",
+        "set_animation_frame": 0,
+        "set_animation_id": "stand",
         "dodge": 80,
         "super_armor": 80,
+        "status": "break"
+      }
+    }
+  ],
+  "reflecting_frame_events": [
+    {
+      "buffer": {
+        "set_animation_frame": 0,
+        "set_animation_id": "stand",
+        "dodge": 45,
+        "super_armor": 45,
         "status": "break"
       }
     }
@@ -18,7 +29,16 @@
       "velocity_factor_x_q8": 128
     },
     {
+      "before_frame": 4,
+      "frame_event": "can_low_slide"
+    },
+    {
+      "frame": 3,
+      "set_cooldown": "tech", "min_cooldown": 36
+    },
+    {
       "frame": 0,
+      "sfx": "parry", "volume": 0.33, "speed": 1.45,
       "is_falling": false,
       "velocity_factor_y_q8": 128
     },
@@ -98,6 +118,20 @@
     {
       "hit_effect": "air_counter",
       "sprite_sheet_id": "parry",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "parry",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "hit_effect": "air_counter",
+      "sprite_sheet_id": "parry",
       "sprite_index": 3,
       "anchor_x": 16,
       "anchor_y": 32
@@ -181,6 +215,12 @@
     {
       "sprite_sheet_id": "parry",
       "sprite_index": 6,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "parry",
+      "sprite_index": 7,
       "anchor_x": 16,
       "anchor_y": 32
     },

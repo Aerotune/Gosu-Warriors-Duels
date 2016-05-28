@@ -1,7 +1,7 @@
 {
   "before_frame_events": [
     {
-      "ignore_unit_collision": true
+      "ignore_unit_collision": 1
     },
     {
       "frame": 0,

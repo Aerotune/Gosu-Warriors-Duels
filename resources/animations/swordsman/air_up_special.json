@@ -19,7 +19,7 @@
       "volume": 0.5
     },
     {
-      "frame": [0,4,11,19,22,26],
+      "frame": [11,19,22,26],
       "new_hit": "air_up_special"
     },
     {
@@ -47,28 +47,24 @@
   ],
   "frames": [
     {
-      "hit_effect": "clash",
       "sprite_sheet_id": "air_up_special",
       "sprite_index": 0,
       "anchor_x": 25,
       "anchor_y": 50
     },
     {
-      "hit_effect": "clash",
       "sprite_sheet_id": "air_up_special",
       "sprite_index": 0,
       "anchor_x": 25,
       "anchor_y": 50
     },
     {
-      "hit_effect": "clash",
       "sprite_sheet_id": "air_up_special",
       "sprite_index": 0,
       "anchor_x": 25,
       "anchor_y": 50
     },
     {
-      "hit_effect": "clash",
       "sprite_sheet_id": "air_up_special",
       "sprite_index": 1,
       "anchor_x": 25,

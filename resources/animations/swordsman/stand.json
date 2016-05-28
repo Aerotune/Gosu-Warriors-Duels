@@ -3,6 +3,11 @@
     
   ],
   "before_frame_events": [
+    {
+      "on_ground": false, 
+      "set_animation_id": "jump_up_forward", 
+      "set_animation_frame": 10
+    },
     { 
       "speed_x_q8_above": 1,
       "set_animation_frame": 20

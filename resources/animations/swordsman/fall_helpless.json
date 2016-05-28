@@ -1,0 +1,213 @@
+{
+  "before_frame_events": [
+    { "frame_event": "can_ground_tech" },
+    { "frame_event": "can_wall_cling" },
+    { "frame_event": "can_aerial_attack", "hit_stun_below": 1 },
+    {
+      "is_fast_falling": false,
+      "on_ground_bounce": true,
+      "on_ground": true,
+      "velocity_factor_y_q8": "ground_bounce",
+      "set_animation_id": "hurt_air",
+      "set_animation_frame": "hit_stun",
+      "status": "break"
+    },
+    {
+      "is_falling": true,
+      "on_ground": true,
+      "velocity_y_q8": 0,
+      "set_animation_id": "land_knocked_down",
+      "set_animation_frame": 0,
+      "status": "break"
+    },
+    { "frame_event": "can_fast_fall_single_tap", "hit_stun_below": 1 },
+    { "frame_event": "can_air_hurt_di", "hit_stun_above": 0 },
+    { "frame_event": "can_air_di",      "hit_stun_below": 1 },
+    {
+      "frame": -1,
+      "set_animation_frame": -2
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "fall_helpless",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

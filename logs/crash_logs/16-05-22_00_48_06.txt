@@ -1,6 +1,0 @@
-NameError: undefined local variable or method `speed' for #<Game:0x007fa7d3fb9000>
-	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:845:in `apply_hit'
-	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:749:in `process_hit_collision'
-	/Users/bue/Documents/Git/gosu_warriors_duels/app/game.rb:489:in `update'
-	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:80:in `update'
-	/Users/bue/Documents/Git/gosu_warriors_duels/main.rb:96:in `<main>'

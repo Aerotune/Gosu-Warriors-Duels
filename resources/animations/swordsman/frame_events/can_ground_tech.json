@@ -1,0 +1,46 @@
+[
+  {
+    "on_ground": true,
+    "is_falling": true,
+    "key_down": "tech", "time_since_key_down": 20,
+    "latest_key_down": "backward", "keys": ["forward", "backward"],
+    "can_consume": "tech",
+    "velocity_y_q8": 0,
+    "buffer": {
+      "vfx": "tech",
+      "factor_x": "invert",
+      "set_animation_id": "tech_roll",
+      "set_animation_frame": 0
+    },
+    "status": "break"
+  },
+  {
+    "on_ground": true,
+    "is_falling": true,
+    "key_down": "tech", "time_since_key_down": 20,
+    "latest_key_down": "forward", "keys": ["forward", "backward"],
+    "can_consume": "tech",
+    "velocity_y_q8": 0,
+    "buffer": {
+      "vfx": "tech",
+      "set_animation_id": "tech_roll",
+      "set_animation_frame": 0
+    },
+    "status": "break"
+  },
+  {
+    "on_ground": true,
+    "is_falling": true,
+    "key_down": "tech", "time_since_key_down": 20, "key_up": ["forward", "backward"],
+    "can_consume": "tech",
+    "velocity_y_q8": 0,
+    "ground_friction": 0,
+    "ground_velocity_filter": 80,
+    "buffer": {
+      "vfx": "tech",
+      "set_animation_id": "tech_land",
+      "set_animation_frame": 0
+    },
+    "status": "break"
+  }
+]

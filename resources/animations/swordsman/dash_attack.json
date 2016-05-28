@@ -5,16 +5,11 @@
       "ground_friction": 9,
       "ground_velocity_filter": 2
     },
+    { "frame_event": "can_wave_bounce_170" },
     {
       "frame": 3,
-      "key_down": "block", "time_since_key_down": 4,
-      "velocity_factor_x_q8": -110
-    },
-    {
-      "frame": 3,
-      "key_down": "backward", "time_since_key_down": 4,
-      "factor_x": "invert",
-      "velocity_factor_x_q8": -256
+      "key_down": "backward",
+      "factor_x": "invert"
     },
     {
       "after_frame": 4,

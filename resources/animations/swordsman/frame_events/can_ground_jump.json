@@ -4,6 +4,7 @@
     "time_since_key_down": 6,
     "set_animation_id": "pre_jump",
     "set_animation_frame": 0,
+    "fast_fall": false,
     "status": "break"
   }
 ]

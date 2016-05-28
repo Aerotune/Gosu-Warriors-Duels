@@ -6,36 +6,13 @@
       "sfx": ["swish/1", "swish/2", "swish/3", "swish/4", "swish/5"],
       "volume": 0.2
     },
+    
+    { "frame_event": "can_wave_bounce_200" },
     {
-      "on_ground": false,
-      "frame": 4,
+      "frame": 5,
+      "velocity_y_q8": -830,
       "acceleration_x_q8": 400,
       "max_speed_x_q8": 900
-    },
-    {
-      "on_ground": false,
-      "frame": [4,5,6,7,8],
-      "is_falling": true,
-      "acceleration_y_q8": -120,
-      "max_speed_y_q8": 0
-    },
-    {
-      "on_ground": true,
-      "frame": 4,
-      "velocity_y_q8": -840,
-      "acceleration_x_q8": 400,
-      "max_speed_x_q8": 900
-    },
-    {
-      "on_ground": true,
-      "frame": 4,
-      "key_up": "attack",
-      "velocity_y_q8": -600
-    },
-    {
-      "frame": 3,
-      "key_down": "block", "time_since_key_down": 4,
-      "velocity_factor_x_q8": -256
     },
     {
       "frame": 4,

@@ -1,0 +1,13 @@
+[
+  {
+    "latest_key_down": "down",
+    "keys": ["up", "down"],
+    "key_down": "special",
+    "time_since_key_down": 6,
+    "buffer": {
+      "set_animation_id": "down_special",
+      "set_animation_frame": 0
+    },
+    "status": "break"
+  }
+]

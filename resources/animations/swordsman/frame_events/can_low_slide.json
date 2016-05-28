@@ -1,9 +1,19 @@
 [
   {
-    "latest_key_down": "down", "keys": ["forward", "backward", "up", "down"],
-    "key_down": "special", "time_since_key_down": 6,
+    "latest_key_down": "forward", "keys": ["forward", "backward", "up", "down"],
+    "key_down": "block", "time_since_key_down": 6,
     "buffer_animation_id": "low_slide_forward",
     "buffer_animation_frame": 0,
+    "status": "break"
+  },
+  {
+    "latest_key_down": "backward", "keys": ["forward", "backward", "up", "down"],
+    "key_down": "block", "time_since_key_down": 6,
+    "buffer": {
+      "set_animation_id": "low_slide_forward",
+      "set_animation_frame": 0,
+      "factor_x": "invert"
+    },
     "status": "break"
   }
 ]

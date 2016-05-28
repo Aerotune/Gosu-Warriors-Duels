@@ -8,13 +8,6 @@
     },
     { "frame_event": "can_low_slide" },
     { "frame_event": "can_ground_jump" },
-    { "frame_event": "can_run_backward" },
-    {
-      "key_down": "block",
-      "buffer_animation_id": "block_low",
-      "buffer_animation_frame": 0,
-      "status": "break"
-    },
     {
       "key_up": "down",
       "set_animation_id": "duck_to_stand",

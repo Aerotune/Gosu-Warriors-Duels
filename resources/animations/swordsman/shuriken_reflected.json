@@ -28,7 +28,8 @@
   ],
   "before_frame_events": [
     {
-      "no_friction": true
+      "no_friction_x": 1,
+      "no_friction_y": 1
     },
     {
       "on_wall": true,

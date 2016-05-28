@@ -12,7 +12,8 @@
       "set_cooldown": "wall_cling", "min_cooldown": 5,
       "velocity_y_q8": -700,
       "sfx": ["crow/cra/1", "crow/cra/2", "crow/cra/3", "crow/cra/4"],
-      "volume": 0.65
+      "volume": 0.65,
+      "vfx": "air_jump"
     },
     {
       "frame": 0,
@@ -34,6 +35,7 @@
     },
     { "frame_event": "can_air_di" },
     { "frame_event": "can_aerial_attack" },
+    { "frame_event": "can_parry" },
     { "frame_event": "can_fast_fall" },
     { "frame_event": "can_wall_cling", "except_frame": [1,2,3]}
   ],

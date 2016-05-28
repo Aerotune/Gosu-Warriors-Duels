@@ -2,7 +2,8 @@
   "on_set_events": [
     {
       "sfx": ["land/light"],
-      "volume": 0.1
+      "fast_fall": false,
+      "volume": 0.15, "speed": 1.5
     }
   ],
   "before_frame_events": [
@@ -41,6 +42,78 @@
     }
   ],
   "frames": [
+    {
+      "sprite_sheet_id": "land",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
     {
       "sprite_sheet_id": "land",
       "sprite_index": 0,

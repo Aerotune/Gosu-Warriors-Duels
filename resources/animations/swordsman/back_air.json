@@ -2,15 +2,17 @@
   "hit_id": "back_air",
   "on_hit_frame_events": [
     {
-      "land_frame_index": -8
+      "land_frame_index": -10
     }
   ],
   "clash_frame_events": [
     {
-      "velocity_factor_x_q8": 50,
-      "velocity_y_q8": -600,
-      "buffer_animation_frame": 0,
-      "buffer_animation_id": "back_air_clash",
+      "buffer": {
+        "velocity_factor_x_q8": 50,
+        "velocity_y_q8": -600,
+        "set_animation_frame": 0,
+        "set_animation_id": "back_air_clash"
+      },
       "status": "break"
     }
   ],
@@ -21,27 +23,20 @@
     },
     { "frame_event": "can_fast_fall_single_tap", "after_frame": 2 },
     {
-      "except_frame": [0,1,2,3,-1,-2,-3,-4],
+      "except_frame": [0,1,2,3,4,5,-1,-2,-3],
       "on_ground": true,
       "set_animation_id": "land",
       "set_animation_frame": -20,
       "status": "break"
     },
+    { "frame_event": "can_wave_bounce_256", "on_ground": false },
     {
-      "frame": 3,
-      "on_ground": false,
-      "key_down": "block", "time_since_key_down": 4,
-      "velocity_factor_x_q8": -200
+      "frame_event": "can_wave_bounce_300", "on_ground": true,
+      "velocity_y_q8": 0,
+      "comment": "You can auto cancel and optionally wave bounce this move for a fast turn around landing!"
     },
     {
-      "comment": "You can auto cancel and optionally wave bounce this move for a fast turn around landing!",
-      "frame": 3,
-      "on_ground": true,
-      "key_down": "block", "time_since_key_down": 4,
-      "velocity_factor_x_q8": -300
-    },
-    {
-      "after_frame": 2,
+      "after_frame": 3,
       "on_ground": true,
       "land_frame_index": -6,
       "buffer_animation_id": "land",
@@ -53,19 +48,33 @@
       "factor_x": "invert"
     },
     {
-      "frame": 3,
-      "key_up": "down",
-      "acceleration_y_q8": -450,
-      "max_speed_y_q8": 400
+      "on_ground": false,
+      "frame": 4,
+      "key_down": "attack",
+      "acceleration_y_q8": -750,
+      "max_speed_y_q8": 600,
+      "sfx": ["swoosh/1", "swoosh/2", "swoosh/3"], "speed": 0.7,
+      "vfx": {
+        "id": "air_swirl_diagonal",
+        "factor_x": "invert",
+        "fps": 60,
+        "offset_x": -10,
+        "offset_y": -22,
+        "color": "0x44FFFFFF"
+      }
     },
-    { "no_friction": true, "before_frame": 6 },
+    { "no_friction_x": 1, "before_frame": 6 },
     { "frame_event": "can_air_di", "after_frame": 5 },
     {
+      
       "frame": 4,
-      "sfx": ["sword/swish/1", "sword/swish/2", "sword/swish/3"]
+      "sfx": ["sword/swish/1", "sword/swish/2", "sword/swish/3"],
+      "speed": 0.75,
+      "volume": 0.65
     },
     {
       "frame": "last",
+      "land_frame_index": null,
       "set_animation_id": "jump_up_forward",
       "set_animation_frame": -4,
       "status": "break"

@@ -1,0 +1,182 @@
+{
+  "on_set_events": [
+    {
+      "sfx": ["land/light"],
+      "fast_fall": false,
+      "jab_lock_count": 0,
+      "volume": 0.65, "speed": 0.85
+    }
+  ],
+  "jab_lock_events": [
+    {
+      "set_animation_frame": 0
+    }
+  ],
+  "before_frame_events": [
+    { "ignore_unit_collision": 1 },
+    {
+      "can_jab_lock": false,
+      "dodge": 1
+    },
+    {
+      "force_get_up": true,
+      "frame": "last",
+      "dodge": 16,
+      "set_animation_id": "tech_land",
+      "set_animation_frame": 0,
+      "status": "break"
+    },
+    {
+      "frame": "last",
+      "set_animation_id": "knocked_down",
+      "set_animation_frame": 0,
+      "status": "break"
+    }
+  ],
+  "frames": [
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 2,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 3,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 4,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "land_knocked_down",
+      "sprite_index": 5,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "knocked_down",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "knocked_down",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "knocked_down",
+      "sprite_index": 0,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "knocked_down",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "knocked_down",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    },
+    {
+      "sprite_sheet_id": "knocked_down",
+      "sprite_index": 1,
+      "anchor_x": 16,
+      "anchor_y": 32
+    }
+  ]
+}

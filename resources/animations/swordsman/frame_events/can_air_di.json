@@ -2,13 +2,13 @@
   {
     "latest_key_down": "forward",
     "keys": ["forward", "backward"],
-    "acceleration_x_q8": 19,
-    "max_speed_x_q8": 1100
+    "acceleration_x_q8": 22,
+    "max_speed_x_q8": 550
   },
   {
     "latest_key_down": "backward",
     "keys": ["forward", "backward"],
-    "acceleration_x_q8": -19,
-    "max_speed_x_q8": 1100
+    "acceleration_x_q8": -22,
+    "max_speed_x_q8": 550
   }
 ]

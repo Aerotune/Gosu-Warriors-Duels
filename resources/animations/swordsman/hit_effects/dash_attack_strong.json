@@ -2,7 +2,7 @@
   "can_clash": false,
   "cause_clash": true,
   "reflects_projectiles": false,
-  "priority": 0,
+  "priority": 1,
   "clash_freeze_frames": 3,
   "hit_freeze_frames": 18,
   "hit_vfxs": ["slice"],
@@ -12,18 +12,21 @@
     "startup_frames": 64,
     "type": "hit",
     "animation_id": "death_mark",
+    "can_jab_lock": true,
+    "hit_make_helpless": true,
     "hit_keep_velocity_x_q8": 128,
     "hit_keep_velocity_y_q8": 128,
     "hit_acceleration_x_q8": -550,
     "hit_acceleration_y_q8": -1200,
     "hit_max_speed_x_q8": 350,
-    "hit_max_speed_y_q8": 900,
+    "hit_max_speed_y_q8": 800,
     "hit_stun_frames": 18,
     "hit_freeze_frames": 6,
+    "hit_stun_frames": 29,
     "hit_shake": {"amount": 1.2, "duration": 2},
     "hit_vfxs": ["big_splat", "slice"],
     "hit_sfxs": ["sword/hit_heavy/1"],
-    "damage_estimate": 45,
-    "damage": 45
+    "damage_estimate": 50,
+    "damage": 40
   }
 }
